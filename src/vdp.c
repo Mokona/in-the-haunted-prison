@@ -6,20 +6,6 @@ void clear_screen()
     my_agon_putc(12);
 }
 
-void set_mode(int m)
-{
-    my_agon_putc(22);
-    my_agon_putc(m);
-}
-
-void scaling(char i)
-{
-    my_agon_putc(23);
-    my_agon_putc(0);
-    my_agon_putc(0xc0);
-    my_agon_putc(i);
-}
-
 void color(char c)
 {
     my_agon_putc(17);
