@@ -1,0 +1,202 @@
+{
+    "maps": [
+        {
+            "fileName": "level_05.tmx",
+            "height": 160,
+            "width": 160,
+            "x": 0,
+            "y": 0
+        },
+        {
+            "fileName": "level_15.tmx",
+            "height": 160,
+            "width": 160,
+            "x": 160,
+            "y": 0
+        },
+        {
+            "fileName": "level_25.tmx",
+            "height": 160,
+            "width": 160,
+            "x": 320,
+            "y": 0
+        },
+        {
+            "fileName": "level_24.tmx",
+            "height": 160,
+            "width": 160,
+            "x": 320,
+            "y": -160
+        },
+        {
+            "fileName": "level_23.tmx",
+            "height": 160,
+            "width": 160,
+            "x": 320,
+            "y": -320
+        },
+        {
+            "fileName": "level_26.tmx",
+            "height": 160,
+            "width": 160,
+            "x": 320,
+            "y": 160
+        },
+        {
+            "fileName": "level_35.tmx",
+            "height": 160,
+            "width": 160,
+            "x": 480,
+            "y": 0
+        },
+        {
+            "fileName": "level_36.tmx",
+            "height": 160,
+            "width": 160,
+            "x": 480,
+            "y": 160
+        },
+        {
+            "fileName": "level_16.tmx",
+            "height": 160,
+            "width": 160,
+            "x": 160,
+            "y": 160
+        },
+        {
+            "fileName": "level_27.tmx",
+            "height": 160,
+            "width": 160,
+            "x": 320,
+            "y": 320
+        },
+        {
+            "fileName": "level_45.tmx",
+            "height": 160,
+            "width": 160,
+            "x": 640,
+            "y": 0
+        },
+        {
+            "fileName": "level_55.tmx",
+            "height": 160,
+            "width": 160,
+            "x": 800,
+            "y": 0
+        },
+        {
+            "fileName": "level_33.tmx",
+            "height": 160,
+            "width": 160,
+            "x": 480,
+            "y": -320
+        },
+        {
+            "fileName": "level_43.tmx",
+            "height": 160,
+            "width": 160,
+            "x": 640,
+            "y": -320
+        },
+        {
+            "fileName": "level_34.tmx",
+            "height": 160,
+            "width": 160,
+            "x": 480,
+            "y": -160
+        },
+        {
+            "fileName": "level_44.tmx",
+            "height": 160,
+            "width": 160,
+            "x": 640,
+            "y": -160
+        },
+        {
+            "fileName": "level_53.tmx",
+            "height": 160,
+            "width": 160,
+            "x": 800,
+            "y": -320
+        },
+        {
+            "fileName": "level_54.tmx",
+            "height": 160,
+            "width": 160,
+            "x": 800,
+            "y": -160
+        },
+        {
+            "fileName": "level_63.tmx",
+            "height": 160,
+            "width": 160,
+            "x": 960,
+            "y": -320
+        },
+        {
+            "fileName": "level_64.tmx",
+            "height": 160,
+            "width": 160,
+            "x": 960,
+            "y": -160
+        },
+        {
+            "fileName": "level_73.tmx",
+            "height": 160,
+            "width": 160,
+            "x": 1120,
+            "y": -320
+        },
+        {
+            "fileName": "level_74.tmx",
+            "height": 160,
+            "width": 160,
+            "x": 1120,
+            "y": -160
+        },
+        {
+            "fileName": "level_65.tmx",
+            "height": 160,
+            "width": 160,
+            "x": 960,
+            "y": 0
+        },
+        {
+            "fileName": "level_13.tmx",
+            "height": 160,
+            "width": 160,
+            "x": 160,
+            "y": -320
+        },
+        {
+            "fileName": "level_14.tmx",
+            "height": 160,
+            "width": 160,
+            "x": 160,
+            "y": -160
+        },
+        {
+            "fileName": "level_56.tmx",
+            "height": 160,
+            "width": 160,
+            "x": 800,
+            "y": 160
+        },
+        {
+            "fileName": "level_57.tmx",
+            "height": 160,
+            "width": 160,
+            "x": 800,
+            "y": 320
+        },
+        {
+            "fileName": "level_06.tmx",
+            "height": 160,
+            "width": 160,
+            "x": 0,
+            "y": 160
+        }
+    ],
+    "onlyShowAdjacentMaps": false,
+    "type": "world"
+}

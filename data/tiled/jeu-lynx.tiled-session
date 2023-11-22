@@ -1,0 +1,412 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "level_06.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "fileStates": {
+        "jeu-lynx.tsx": {
+            "scaleInDock": 3.1088,
+            "scaleInEditor": 2.9414
+        },
+        "level_05.tmx": {
+            "expandedObjectLayers": [
+                4,
+                5
+            ],
+            "scale": 3.1624,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 637.4905135340248,
+                "y": 77.47280546420441
+            }
+        },
+        "level_06.tmx": {
+            "expandedObjectLayers": [
+                4,
+                5
+            ],
+            "scale": 2.314,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 132.02247191011236,
+                "y": 26.14520311149525
+            }
+        },
+        "level_13.tmx": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 2.314,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 476.6637856525497,
+                "y": 396.71564390665515
+            }
+        },
+        "level_14.tmx": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 2.314,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": -27.87381158167676,
+                "y": 346.36992221261886
+            }
+        },
+        "level_15.tmx": {
+            "expandedObjectLayers": [
+                3,
+                2
+            ],
+            "scale": 2.5458,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 153.78270091916096,
+                "y": 91.32689135045959
+            }
+        },
+        "level_16.tmx": {
+            "expandedObjectLayers": [
+                4,
+                3,
+                5
+            ],
+            "scale": 2.5458,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 163.9956005970618,
+                "y": 176.95812711132058
+            }
+        },
+        "level_23.tmx": {
+            "expandedObjectLayers": [
+                4,
+                5
+            ],
+            "scale": 2.5458,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": -24.15743577657318,
+                "y": 158.10354309058056
+            }
+        },
+        "level_24.tmx": {
+            "expandedObjectLayers": [
+                4
+            ],
+            "scale": 2.5458,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 220.55935265928196,
+                "y": -63.43781915311493
+            }
+        },
+        "level_25.tmx": {
+            "expandedObjectLayers": [
+                4
+            ],
+            "scale": 2.5458,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 71.29389582842327,
+                "y": 27.692670280461925
+            }
+        },
+        "level_26.tmx": {
+            "expandedObjectLayers": [
+                4,
+                3,
+                2
+            ],
+            "scale": 2.5458,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 4.124440254536864,
+                "y": 47.72566580249824
+            }
+        },
+        "level_27.tmx": {
+            "expandedObjectLayers": [
+                4,
+                3,
+                5
+            ],
+            "scale": 2.5458,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 297.9417079110692,
+                "y": -172.2444811061356
+            }
+        },
+        "level_33.tmx": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 2.5458,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 237.05711367742953,
+                "y": 96.43334118941002
+            }
+        },
+        "level_34.tmx": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 2.5458,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 398.89229318878154,
+                "y": -31.2279047843507
+            }
+        },
+        "level_35.tmx": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 2.5458,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": -89.3628721816325,
+                "y": -161.6387775944693
+            }
+        },
+        "level_36.tmx": {
+            "expandedObjectLayers": [
+                4,
+                3,
+                5
+            ],
+            "scale": 2.5458,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 137.28493990101342,
+                "y": -12.766124597376063
+            }
+        },
+        "level_43.tmx": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 2.5458,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": -19.83659360515358,
+                "y": 211.91766831644276
+            }
+        },
+        "level_44.tmx": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 2.5458,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": -20.229397438919023,
+                "y": 39.86958912718987
+            }
+        },
+        "level_45.tmx": {
+            "expandedObjectLayers": [
+                4,
+                3,
+                5
+            ],
+            "scale": 2.5458,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 129.82166705947049,
+                "y": 99.57577185953332
+            }
+        },
+        "level_53.tmx": {
+            "expandedObjectLayers": [
+                4,
+                3
+            ],
+            "scale": 2.5458,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 137.67774373477886,
+                "y": 128.64325555817422
+            }
+        },
+        "level_54.tmx": {
+            "expandedObjectLayers": [
+                4,
+                3
+            ],
+            "scale": 2.5458,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 242.55636735014536,
+                "y": 49.29688113755991
+            }
+        },
+        "level_55.tmx": {
+            "expandedObjectLayers": [
+                4,
+                3
+            ],
+            "scale": 2.5458,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": -30.442297116819873,
+                "y": 193.45588812946815
+            }
+        },
+        "level_56.tmx": {
+            "expandedObjectLayers": [
+                4
+            ],
+            "scale": 2.5458,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 63.43781915311493,
+                "y": 139.2489590698405
+            }
+        },
+        "level_57.tmx": {
+            "expandedObjectLayers": [
+                4
+            ],
+            "scale": 2.314,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": -679.5592048401037,
+                "y": -196.84528954191876
+            }
+        },
+        "level_63.tmx": {
+            "expandedObjectLayers": [
+                4,
+                3
+            ],
+            "scale": 2.5458,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 177.35093094508602,
+                "y": 127.46484405687801
+            }
+        },
+        "level_64.tmx": {
+            "expandedObjectLayers": [
+                4,
+                3,
+                5
+            ],
+            "scale": 2.5458,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 11.194909262314383,
+                "y": 177.74373477885143
+            }
+        },
+        "level_65.tmx": {
+            "expandedObjectLayers": [
+                4,
+                3
+            ],
+            "scale": 3.1624,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": -854.8886921325577,
+                "y": 236.68732608145714
+            }
+        },
+        "level_73.tmx": {
+            "expandedObjectLayers": [
+                4,
+                3
+            ],
+            "scale": 2.314,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": -921.9965427830597,
+                "y": 118.62575626620571
+            }
+        },
+        "level_74.tmx": {
+            "expandedObjectLayers": [
+                4,
+                3,
+                5
+            ],
+            "scale": 2.5458,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": -148.67625108021053,
+                "y": 178.13653861261687
+            }
+        }
+    },
+    "last.imagePath": "/home/mokona/Developpement/Retro/CamputersLynx/jeu-lynx/data/tiled",
+    "last.worldFilePath": "/home/mokona/Developpement/Retro/CamputersLynx/jeu-lynx/data/tiled",
+    "loadedWorlds": [
+        "/home/mokona/Developpement/Retro/CamputersLynx/jeu-lynx/data/tiled/jeu-lynx.world"
+    ],
+    "map.height": 10,
+    "map.lastUsedFormat": "tmx",
+    "map.renderOrder": "3",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 10,
+    "openFiles": [
+        "level_23.tmx",
+        "jeu-lynx.tsx",
+        "level_05.tmx",
+        "level_16.tmx",
+        "level_06.tmx",
+        "level_13.tmx",
+        "level_14.tmx",
+        "level_56.tmx",
+        "level_57.tmx",
+        "level_55.tmx",
+        "level_25.tmx",
+        "level_15.tmx",
+        "level_26.tmx",
+        "level_36.tmx",
+        "level_27.tmx",
+        "level_35.tmx",
+        "level_45.tmx",
+        "level_24.tmx",
+        "level_33.tmx",
+        "level_43.tmx",
+        "level_44.tmx",
+        "level_34.tmx",
+        "level_53.tmx",
+        "level_63.tmx",
+        "level_73.tmx",
+        "level_54.tmx",
+        "level_64.tmx",
+        "level_74.tmx",
+        "level_65.tmx",
+        "level_05.tmx"
+    ],
+    "project": "jeu-lynx.tiled-project",
+    "property.type": "bool",
+    "recentFiles": [
+        "level_23.tmx",
+        "jeu-lynx.tsx",
+        "level_05.tmx",
+        "level_16.tmx",
+        "level_65.tmx",
+        "level_74.tmx",
+        "level_64.tmx",
+        "level_54.tmx",
+        "level_73.tmx",
+        "level_63.tmx",
+        "level_53.tmx",
+        "level_34.tmx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}

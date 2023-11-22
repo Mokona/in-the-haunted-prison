@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="left-up" width="10" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="6">
+ <tileset firstgid="1" source="jeu-lynx.tsx"/>
+ <layer id="1" name="Graph" width="10" height="10">
+  <data encoding="csv">
+644,644,644,644,1,644,644,644,644,644,
+644,739,1,1,1,1,1,1,739,644,
+644,1,1,1,1,1,1,1,1,644,
+644,1,1,646,1,646,1,646,1,644,
+1,1,1,1,1,1,1,1,1,1,
+644,1,1,1,1,1,1,1,1,644,
+644,1,1,646,1,646,1,646,1,644,
+644,1,1,1,1,1,1,1,1,644,
+644,1,1,1,1,1,1,1,739,644,
+644,644,644,451,644,551,644,644,644,644
+</data>
+ </layer>
+ <objectgroup id="5" name="Texte">
+  <object id="5" x="38.777" y="65.1232" width="74.8539" height="22.1615">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#ff0000" italic="1">Vos pas r@sonnent</text>
+  </object>
+ </objectgroup>
+ <layer id="2" name="Spawn" width="10" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="3" name="Liaisons">
+  <object id="1" x="47.1963" y="147.494" width="16.6858" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">E27</text>
+  </object>
+  <object id="2" x="64.2038" y="20.7341" width="16.6858" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">S27</text>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="Leviers">
+  <object id="3" x="79.9345" y="146.681" width="16.6858" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#00ffff" halign="center" valign="center">L8</text>
+  </object>
+  <object id="4" x="47.3853" y="146.928" width="16.6858" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#00ffff" halign="center" valign="center">L7</text>
+  </object>
+ </objectgroup>
+</map>

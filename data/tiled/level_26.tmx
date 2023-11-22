@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="left-up" width="10" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="27">
+ <tileset firstgid="1" source="jeu-lynx.tsx"/>
+ <layer id="1" name="Graph" width="10" height="10">
+  <data encoding="csv">
+844,844,844,844,1,1,844,844,844,844,
+844,6,1,739,1,1,739,1,1,844,
+844,1,1,1,1,1,1,1,1,844,
+551,1,1,1,6,1,1,1,1,451,
+844,1,1,1,1,1,1,1,1,844,
+844,1,1,1,1,1,1,1,1,844,
+551,1,1,1,1,1,1,6,1,551,
+844,1,1,1,1,1,1,1,1,844,
+844,6,1,1,1,1,1,6,1,844,
+844,844,844,551,844,844,551,844,844,844
+</data>
+ </layer>
+ <objectgroup id="4" name="Texte">
+  <object id="26" x="37.5986" y="73.3721" width="74.8539" height="22.1615">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#ff0000" italic="1">Cellules</text>
+  </object>
+ </objectgroup>
+ <objectgroup id="2" name="Liaisons">
+  <object id="1" x="2.14359" y="51.0054" width="13.8947" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">E4</text>
+  </object>
+  <object id="7" x="2.14359" y="51.0054" width="13.8947" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">E4</text>
+  </object>
+  <object id="8" x="16.5432" y="51.1206" width="13.8947" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">S3</text>
+  </object>
+  <object id="2" x="1.75041" y="99.7647" width="13.8947" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">E6</text>
+  </object>
+  <object id="3" x="49.2847" y="147.097" width="13.8947" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">E7</text>
+  </object>
+  <object id="4" x="97.2235" y="147.501" width="13.8947" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">E9</text>
+  </object>
+  <object id="9" x="15.7464" y="99.6137" width="13.8947" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">S5</text>
+  </object>
+  <object id="10" x="49.0739" y="133.243" width="13.8947" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">S8</text>
+  </object>
+  <object id="12" x="128.122" y="97.9556" width="16.6858" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">S12</text>
+  </object>
+  <object id="18" x="127.225" y="50.2079" width="16.6858" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">S13</text>
+  </object>
+  <object id="14" x="143.772" y="97.8559" width="16.6858" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">E11</text>
+  </object>
+  <object id="16" x="143.772" y="97.8559" width="16.6858" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">E11</text>
+  </object>
+  <object id="17" x="142.875" y="50.806" width="16.6858" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">E14</text>
+  </object>
+  <object id="15" x="96.3731" y="132.645" width="16.1874" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">S10</text>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="Leviers">
+  <object id="19" x="1.85564" y="51.3702" width="16.6858" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#00ff7f" halign="center" valign="center">L1</text>
+  </object>
+  <object id="21" x="1.19767" y="99.8955" width="16.6858" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#00ff7f" halign="center" valign="center">L2</text>
+  </object>
+  <object id="22" x="47.9136" y="146.611" width="16.6858" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#00ff7f" halign="center" valign="center">L3</text>
+  </object>
+  <object id="23" x="95.4519" y="147.105" width="16.6858" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#00ff7f" halign="center" valign="center">L4</text>
+  </object>
+  <object id="24" x="143.484" y="98.9085" width="16.6858" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#00ff7f" halign="center" valign="center">L5</text>
+  </object>
+  <object id="25" x="144.306" y="51.0412" width="16.6858" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#00ff7f" halign="center" valign="center">L6</text>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="left-up" width="10" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="11">
+ <tileset firstgid="1" source="jeu-lynx.tsx"/>
+ <layer id="1" name="Graph" width="10" height="10">
+  <data encoding="csv">
+644,644,644,644,1,644,644,644,644,644,
+644,739,1,1,1,1,1,1,739,644,
+644,1,1,646,1,1,646,1,1,644,
+644,1,1,1,1,1,1,1,1,644,
+1,1,1,1,1,1,1,1,1,1,
+644,1,1,1,1,1,1,1,1,644,
+644,1,1,646,1,1,646,1,1,644,
+644,1,1,1,1,1,1,1,1,644,
+644,1,1,1,1,1,1,1,1,644,
+644,644,644,644,1,644,644,644,644,644
+</data>
+ </layer>
+ <objectgroup id="5" name="Texte">
+  <object id="10" x="41.9194" y="61.1952" width="74.8539" height="22.1615">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#ff0000" italic="1">Vos pas r@sonnent</text>
+  </object>
+ </objectgroup>
+ <layer id="2" name="Spawn" width="10" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,495,0,494,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="3" name="Liaisons">
+  <object id="1" x="1.76788" y="66.4394" width="16.6858" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">E28</text>
+  </object>
+  <object id="2" x="141.803" y="66.2038" width="16.6858" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">E25</text>
+  </object>
+  <object id="3" x="64.7371" y="146.26" width="16.6858" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">E26</text>
+  </object>
+  <object id="7" x="20.0441" y="66.8441" width="16.6858" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">S25</text>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="Leviers">
+  <object id="8" x="47.438" y="133.085" width="16.6858" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#00ffff" halign="center" valign="center">L7</text>
+  </object>
+  <object id="9" x="79.1322" y="133.154" width="16.6858" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#00ffff" halign="center" valign="center">L8</text>
+  </object>
+ </objectgroup>
+</map>

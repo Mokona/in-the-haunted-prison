@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="left-up" width="10" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="13">
+ <tileset firstgid="1" source="jeu-lynx.tsx"/>
+ <layer id="1" name="Graph" width="10" height="10">
+  <data encoding="csv">
+844,844,844,644,644,644,644,644,644,644,
+844,644,844,644,1,644,644,644,644,644,
+844,844,644,1,1,1,644,644,644,644,
+844,644,644,1,1,1,1,1,1,644,
+644,644,644,1,6,1,1,1,644,644,
+644,1,1,1,1,1,1,1,644,844,
+644,644,1,1,1,1,1,644,644,844,
+644,644,644,6,1,1,644,644,644,844,
+644,644,644,644,644,644,644,644,644,844,
+844,644,644,644,644,644,844,844,844,844
+</data>
+ </layer>
+ <layer id="3" name="Spawn" width="10" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,1,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,220,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="5" name="Texte">
+  <object id="12" x="51.4296" y="76.1947" width="74.8539" height="22.1615">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#ff0000" italic="1">Grotte cach@e</text>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="Liaisons">
+  <object id="5" x="127.736" y="51.7552" width="19.07" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">E30</text>
+  </object>
+  <object id="11" x="110.477" y="52.453" width="19.07" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">S31</text>
+  </object>
+ </objectgroup>
+</map>

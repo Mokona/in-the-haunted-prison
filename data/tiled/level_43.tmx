@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="left-up" width="10" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="2">
+ <tileset firstgid="1" source="jeu-lynx.tsx"/>
+ <layer id="1" name="Graph" width="10" height="10">
+  <data encoding="csv">
+644,644,644,644,644,644,644,644,644,644,
+644,1,1,1,1,1,1,1,1,644,
+644,1,1,1,1,1,1,1,1,644,
+644,1,1,454,454,454,454,1,1,644,
+1,1,1,543,543,543,543,1,1,1,
+644,1,1,1,1,1,1,1,1,644,
+644,644,644,1,644,644,153,644,644,644,
+6,1,103,1,1,1,1,103,1,644,
+6,1,1,1,1,1,1,1,1,644,
+6,1,1,1,1,1,1,1,1,644
+</data>
+ </layer>
+ <layer id="2" name="Spawn" width="10" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,172,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,172,0,
+0,0,0,0,0,0,0,172,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="3" name="Texte">
+  <object id="1" x="46.6331" y="26.2356" width="74.8539" height="22.1615">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#ff0000" italic="1">R@fectoire et zombies</text>
+  </object>
+ </objectgroup>
+</map>

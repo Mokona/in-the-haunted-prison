@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="left-up" width="10" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="9">
+ <tileset firstgid="1" source="jeu-lynx.tsx"/>
+ <layer id="1" name="Graph" width="10" height="10">
+  <data encoding="csv">
+844,844,844,844,1,1,844,844,844,844,
+844,844,1,1,1,1,1,1,844,844,
+644,1,1,1,1,1,1,1,739,844,
+844,1,1,1,1,1,1,1,1,844,
+1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,
+844,1,1,1,1,1,1,1,1,844,
+844,1,1,1,1,1,1,1,1,644,
+644,844,739,1,1,1,1,1,844,844,
+844,844,844,844,1,1,844,844,844,844
+</data>
+ </layer>
+ <objectgroup id="4" name="Texte">
+  <object id="8" x="35.2418" y="100.868" width="74.8539" height="22.1615">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#ff0000" italic="1">Un premier choix</text>
+  </object>
+ </objectgroup>
+ <layer id="3" name="Spawn" width="10" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,419,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+</map>

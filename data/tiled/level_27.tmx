@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="left-up" width="10" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="10">
+ <tileset firstgid="1" source="jeu-lynx.tsx"/>
+ <layer id="1" name="Graph" width="10" height="10">
+  <data encoding="csv">
+844,844,844,551,844,844,551,844,844,844,
+844,1,1,1,153,1,1,1,1,844,
+844,1,1,1,153,1,1,1,1,844,
+844,1,1,1,153,1,1,1,1,844,
+844,1,1,1,153,1,1,1,1,844,
+844,1,1,1,153,1,1,1,1,844,
+844,844,844,844,844,844,844,844,844,844,
+844,844,844,844,844,844,844,844,844,844,
+844,844,844,844,844,844,844,844,844,844,
+844,844,844,844,844,844,844,844,844,844
+</data>
+ </layer>
+ <layer id="2" name="Spawn" width="10" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,324,0,0,0,0,324,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,328,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="5" name="Texte">
+  <object id="9" x="34.849" y="76.9073" width="74.8539" height="22.1615">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#ff0000" italic="1">Cellules du sud</text>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="Liaisons">
+  <object id="1" x="95.6228" y="2.37142" width="16.1874" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">E10</text>
+  </object>
+  <object id="2" x="48.886" y="15.7521" width="13.8947" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">S7</text>
+  </object>
+  <object id="3" x="48.5755" y="4.45386" width="13.8947" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">E8</text>
+  </object>
+  <object id="6" x="97.2204" y="14.3224" width="13.8947" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">S9</text>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="Leviers">
+  <object id="7" x="95.9454" y="3.53231" width="16.6858" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#00ff7f" halign="center" valign="center">L4</text>
+  </object>
+  <object id="8" x="48.8883" y="3.72869" width="16.6858" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#00ff7f" halign="center" valign="center">L3</text>
+  </object>
+ </objectgroup>
+</map>

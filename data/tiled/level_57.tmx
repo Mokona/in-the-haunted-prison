@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="left-up" width="10" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="7">
+ <tileset firstgid="1" source="jeu-lynx.tsx"/>
+ <layer id="1" name="Graph" width="10" height="10">
+  <data encoding="csv">
+844,644,844,644,1,844,844,644,844,844,
+844,739,739,739,1,739,739,739,739,644,
+844,739,1,1,1,1,1,1,739,644,
+844,739,1,1,1,1,1,1,739,644,
+844,739,1,1,1,1,1,1,739,644,
+844,739,1,1,303,1,1,1,739,644,
+844,739,1,1,543,1,1,1,739,644,
+644,739,1,1,1,1,1,1,739,644,
+844,739,739,739,739,739,739,739,739,644,
+844,844,844,844,844,844,844,844,844,844
+</data>
+ </layer>
+ <objectgroup id="4" name="Texte">
+  <object id="6" x="40.741" y="47.8398" width="74.8539" height="22.1615">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#ff0000" italic="1">Salle du tr@esor</text>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="Liaisons">
+  <object id="3" x="62.6818" y="68.4813" width="20.6991" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">E240</text>
+  </object>
+  <object id="4" x="40.932" y="83.0434" width="20.6991" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">E241</text>
+  </object>
+  <object id="5" x="82.9334" y="84.1159" width="20.6991" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">E242</text>
+  </object>
+ </objectgroup>
+ <layer id="2" name="Spawn" width="10" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+</map>

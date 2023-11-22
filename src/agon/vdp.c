@@ -1,11 +1,6 @@
 extern void my_agon_putc(char c) __z88dk_fastcall;
 
 
-void clear_screen()
-{
-    my_agon_putc(12);
-}
-
 void color(char c)
 {
     my_agon_putc(17);

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="left-up" width="10" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="10">
+ <tileset firstgid="1" source="jeu-lynx.tsx"/>
+ <layer id="1" name="Graph" width="10" height="10">
+  <data encoding="csv">
+844,844,844,844,844,844,844,844,844,844,
+844,844,844,844,844,844,844,844,844,844,
+844,1,1,1,1,844,844,844,844,844,
+451,1,1,1,1,844,844,844,844,844,
+844,1,1,1,1,844,844,844,844,844,
+844,153,153,1,153,844,844,844,844,844,
+551,1,1,1,1,844,844,844,844,844,
+844,1,1,1,1,844,844,844,844,844,
+844,1,1,1,1,844,844,844,844,844,
+844,844,844,844,844,844,844,844,844,844
+</data>
+ </layer>
+ <objectgroup id="5" name="Texte">
+  <object id="9" x="20.3152" y="114.616" width="74.8539" height="22.1615">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#ff0000" italic="1">Cellules de l'est</text>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="Liaisons">
+  <object id="3" x="-0.468021" y="98.8527" width="16.6858" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">E12</text>
+  </object>
+  <object id="4" x="15.8798" y="51.2047" width="16.6858" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">S14</text>
+  </object>
+  <object id="5" x="0.827845" y="51.2047" width="16.6858" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">E13</text>
+  </object>
+  <object id="6" x="15.1821" y="97.9556" width="16.6858" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">S11</text>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="Leviers">
+  <object id="7" x="0.210716" y="50.8767" width="16.6858" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#00ff7f" halign="center" valign="center">L6</text>
+  </object>
+  <object id="8" x="-0.776239" y="98.5795" width="16.6858" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#00ff7f" halign="center" valign="center">L5</text>
+  </object>
+ </objectgroup>
+ <layer id="2" name="Spawn" width="10" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,324,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+</map>

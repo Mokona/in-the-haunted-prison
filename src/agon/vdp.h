@@ -1,7 +1,6 @@
 #ifndef SNAKE_VDP_H
 #define SNAKE_VDP_H
 
-void clear_screen();
 void set_mode(int m);
 void scaling(char i);
 void color(char c);

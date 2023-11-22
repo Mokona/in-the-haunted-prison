@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="left-up" width="10" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="11">
+ <tileset firstgid="1" source="jeu-lynx.tsx"/>
+ <layer id="1" name="Graph" width="10" height="10">
+  <data encoding="csv">
+844,844,844,844,844,844,844,844,844,844,
+844,739,1,1,1,1,1,1,739,844,
+844,1,1,1,1,1,1,1,1,844,
+1,1,1,1,1,1,1,1,1,844,
+1,1,1,1,6,1,1,1,1,452,
+1,1,1,1,1,1,1,1,1,844,
+844,1,1,1,1,1,1,6,1,844,
+844,1,1,6,1,1,1,1,1,844,
+844,739,1,1,1,1,1,1,739,844,
+844,844,844,844,844,844,844,844,844,844
+</data>
+ </layer>
+ <objectgroup id="5" name="Texte">
+  <object id="10" x="52.9215" y="111.872" width="74.8539" height="22.1615">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#ff0000" italic="1">Entr@e de la prison</text>
+  </object>
+ </objectgroup>
+ <layer id="3" name="Spawn" width="10" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,572,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,31,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="4" name="Liaisons">
+  <object id="3" x="145.119" y="66.5597" width="13.8947" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">E1</text>
+  </object>
+  <object id="6" x="-2.5073" y="67.1679" width="20.6991" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">E254</text>
+  </object>
+  <object id="8" x="-3.11546" y="52.9774" width="20.6991" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">E255</text>
+  </object>
+  <object id="9" x="-3.11546" y="80.5474" width="20.6991" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">E253</text>
+  </object>
+  <object id="5" x="130.661" y="67.056" width="13.8947" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">S2</text>
+  </object>
+ </objectgroup>
+</map>

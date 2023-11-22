@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="left-up" width="10" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="4">
+ <tileset firstgid="1" source="jeu-lynx.tsx"/>
+ <layer id="1" name="Graph" width="10" height="10">
+  <data encoding="csv">
+844,844,844,844,844,844,844,844,844,844,
+844,844,844,844,844,844,844,844,644,844,
+844,739,1,1,1,1,1,1,739,844,
+844,1,1,6,1,1,1,1,1,844,
+452,1,1,1,1,1,1,1,1,1,
+844,1,1,1,1,1,1,1,1,1,
+844,1,1,1,1,1,1,1,6,844,
+844,739,1,1,1,1,1,1,739,844,
+844,644,844,844,844,644,844,844,844,844,
+844,844,844,844,844,844,844,844,844,844
+</data>
+ </layer>
+ <objectgroup id="3" name="Texte">
+  <object id="3" x="51.7395" y="86.3346" width="74.8539" height="22.1615">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#ff0000" italic="1">L'air est humide</text>
+  </object>
+ </objectgroup>
+ <objectgroup id="2" name="Liaisons">
+  <object id="1" x="16.4007" y="66.9158" width="13.8947" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">S1</text>
+  </object>
+  <object id="2" x="1.25642" y="66.763" width="13.8947" height="10.4306">
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#aa00ff" halign="center" valign="center">E2</text>
+  </object>
+ </objectgroup>
+</map>
