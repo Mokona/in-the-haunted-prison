@@ -1,0 +1,13 @@
+.idea/
+build/
+history/
+output/
+cmake-build*
+auto_launch.sh
+launch.sh
+.env/
+cfg/
+temp/
+*.swp
+\.*#
+

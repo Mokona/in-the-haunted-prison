@@ -1,0 +1,19 @@
+# Description to use with Clion to handle the z88dk compiler installed as a snap package
+# File -> Settings -> Toolchain -> Custom Compiler, insert this yaml filename
+# File -> Settings -> Toolchain -> C Compiler, set the compiler as /snap/bin/z88dk.zcc
+
+compilers:
+    - description: z88dk
+      match-sources: ".*\\.c"
+      match-language: C
+      match-compiler-exe: "(.*/)?zcc(\\.exe)?"
+      include-dirs: "/snap/z88dk/current/share/z88dk/include/"
+      defines-text: "
+#define Z80 1
+#define VG5000 1
+#define __VG5000__ 1
+#define __z88dk_sdccdecl
+#define __z88dk_fastcall
+#define __sfr
+#define __at
+"
