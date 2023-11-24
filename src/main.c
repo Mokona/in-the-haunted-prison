@@ -3,6 +3,7 @@
 #include <stdio.h>
 
 #include "clynx/check_96k.h"
+#include "font.h"
 #include "loop_title.h"
 #include "memory.h"
 #include "mobs.h"
@@ -24,6 +25,7 @@ int main()
 #endif
 
     init_malloc();
+    initialize_font();
     initialize_rooms();
     initialize_mob_graphs();
     initialize_text_zone();

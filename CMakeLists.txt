@@ -34,7 +34,7 @@ add_executable(${EXE_NAME}
         src/main.c
         src/battle.c
         src/doors.c
-        src/font_code.asm
+        src/font.c
         src/inventory.c
         src/levers.c
         src/links.c
@@ -49,7 +49,7 @@ add_executable(${EXE_NAME}
         src/objects.c
         src/print.c
         src/room.c
-        src/clynx/screen.asm
+        src/screen.c
         src/spawners.c
         src/teleport.c
         src/text_zone.c
@@ -69,8 +69,6 @@ add_executable(${EXE_NAME}
         generated/spawner_data.c
         generated/texts_data.c
         generated/tile_properties.c
-        src/screen.c
-        src/screen.h
 )
 
 target_link_options(${EXE_NAME} PRIVATE -pragma-define:CLIB_DEFAULT_SCREEN_MODE=8)
