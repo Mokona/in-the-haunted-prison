@@ -8,6 +8,7 @@
 #include "mobs.h"
 #include "objects.h"
 #include "room.h"
+#include "screen.h"
 #include "spawners.h"
 #include "teleport.h"
 #include "text_zone.h"
