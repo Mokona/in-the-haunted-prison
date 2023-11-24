@@ -12,6 +12,7 @@
 #include "mobs.h"
 #include "room.h"
 #include "text_zone.h"
+#include "tiles.h"
 
 #include <stdbool.h>
 
@@ -29,6 +30,7 @@ int main()
 
     init_malloc();
     initialize_font();
+    initialize_tiles();
     initialize_rooms();
     initialize_mob_graphs();
     initialize_text_zone();

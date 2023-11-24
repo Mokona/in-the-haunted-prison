@@ -318,6 +318,7 @@ def output_tiles_graph(compact_tile_ids, tileset):
     result = ''
 
     result += "#pragma once\n\n"
+    result += 'extern const unsigned char tiles_count;\n\n'
     result += f"extern const unsigned char * const all_tiles[];"
 
     output_filename = os.path.join(output_folder, 'tiles_data.h')

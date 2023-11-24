@@ -67,6 +67,22 @@ void bitmap_col_load(int sx, int sy)
     my_agon_putc((sy >> 8) & 0xFF);
 }
 
+void bitmap_col_create(int sx, int sy)
+{
+    my_agon_putc(23);
+    my_agon_putc(27);
+    my_agon_putc(2);
+    my_agon_putc(sx & 0xFF);
+    my_agon_putc((sx >> 8) & 0xFF);
+    my_agon_putc(sy & 0xFF);
+    my_agon_putc((sy >> 8) & 0xFF);
+    my_agon_putc(0xFF);
+    my_agon_putc(0xFF);
+    my_agon_putc(0xFF);
+    my_agon_putc(0xFF);
+}
+
+
 void bitmap_draw(int x, int y)
 {
     my_agon_putc(23);
