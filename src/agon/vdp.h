@@ -9,7 +9,7 @@ void color_change(char l, char p, char r, char g, char b);
 void vdp_plot(char mode, int x, int y);
 void move_to(unsigned int x, unsigned int y);
 void line(unsigned int x, unsigned int y);
-void bitmap_select(char n);
+void bitmap_select(unsigned char n);
 void bitmap_col_load(int sx, int sy);
 void bitmap_draw(int x, int y);
 void sprite_select(char n);

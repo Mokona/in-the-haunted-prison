@@ -4,7 +4,7 @@
 
 #include "vdp.h"
 
-extern void my_agon_putc(char c) __z88dk_fastcall;
+extern void my_agon_putc(unsigned char c) __z88dk_fastcall;
 
 static unsigned short current_location_x;
 static unsigned short current_location_y;

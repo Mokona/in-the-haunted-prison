@@ -48,7 +48,7 @@ void line(int x, int y)
     vdp_plot(5, x, y);
 }
 
-void bitmap_select(char n)
+void bitmap_select(unsigned char n)
 {
     my_agon_putc(23);
     my_agon_putc(27);
