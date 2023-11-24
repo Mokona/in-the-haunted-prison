@@ -2,18 +2,18 @@ from PIL import Image, ImageDraw, ImageFont, ImageColor
 import os
 
 from data_path import data_folder, output_folder
-from utils import output_asm_data
+from utils import output_c_data
 
 BLACK = ImageColor.getrgb('black')
 WHITE = ImageColor.getrgb('white')
 
 CHAR_PALETTE = " !'-./0123456789:?éABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
-CHAR_NUM = len(CHAR_PALETTE)
+CHAR_COUNT = len(CHAR_PALETTE)
 
 WIDTH_PER_CHAR = 8
 HEIGHT_PER_CHAR = 8
 
-SURFACE_WIDTH = CHAR_NUM * WIDTH_PER_CHAR
+SURFACE_WIDTH = CHAR_COUNT * WIDTH_PER_CHAR
 SURFACE_HEIGHT = HEIGHT_PER_CHAR
 
 Y_SHIFT = 0
@@ -59,17 +59,28 @@ def main():
     surface.save(os.path.join(output_folder, 'font_control.png'))  # Save a control image
 
     result = ''
-    result += "        PUBLIC _font_data\n\n"
-    result += '_font_data:\n'
+    result += '#pragma once\n\n'
+    result += '#include <stdint.h>\n\n'
+    result += 'extern const uint8_t font_data[];\n'
+    result += 'extern const unsigned char glyph_count;\n';
+
+    output_filename = os.path.join(output_folder, 'font_data.h')
+    with open(output_filename, 'w') as f:
+        f.write(result)
+
+    result = ''
+    result += '#include "font_data.h"\n\n'
+    result += 'const uint8_t font_data[] = {\n'
 
     # Get each character of the font and read it's 8 bytes vertically
-    for i in range(CHAR_NUM):
+    for i in range(CHAR_COUNT):
         character_bytes = get_bytes(i, surface)
+        result += output_c_data(character_bytes)
 
-        result += output_asm_data(character_bytes)
+    result += '};\n\n'
+    result += 'const unsigned char glyph_count = ' + str(CHAR_COUNT) + ';\n'
 
-    output_filename = os.path.join(output_folder, 'font_data.asm')
-
+    output_filename = os.path.join(output_folder, 'font_data.c')
     with open(output_filename, 'w') as f:
         f.write(result)
 

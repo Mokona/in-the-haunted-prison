@@ -17,7 +17,7 @@ add_custom_command(
 )
 
 add_custom_command(
-        OUTPUT generated/font_data.asm
+        OUTPUT generated/font_data.c generated/font_data.h
         COMMAND python3 ${CMAKE_SOURCE_DIR}/tools/make_font.py ${CMAKE_BINARY_DIR}
         DEPENDS ${CMAKE_SOURCE_DIR}/tools/make_font.py
         DEPENDS ${CMAKE_SOURCE_DIR}/data/PublicPixel.ttf
@@ -60,7 +60,7 @@ add_executable(${EXE_NAME}
 
         # The generated files
         generated/doors_data.c
-        generated/font_data.asm
+        generated/font_data.c
         generated/inventory_data.c
         generated/level_data.h
         generated/levers_data.c
