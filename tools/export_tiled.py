@@ -316,6 +316,17 @@ def output_tiles_graph(compact_tile_ids, tileset):
     os.makedirs(output_reference_folder, exist_ok=True)
 
     result = ''
+
+    result += "#pragma once\n\n"
+    result += f"extern const unsigned char * const all_tiles[];"
+
+    output_filename = os.path.join(output_folder, 'tiles_data.h')
+    with open(output_filename, 'w') as f:
+        f.write(result)
+
+    # Write data to tiles_data.c
+    result = '#include "tiles_data.h"\n\n'
+
     all_labels = []
 
     for tile_id, compact_tile_index in sorted(compact_tile_ids.items(), key=lambda x: x[1]):
@@ -340,7 +351,11 @@ def output_tiles_graph(compact_tile_ids, tileset):
         result += f"    {label},\n"
     result += "};\n\n"
 
-    output_filename = os.path.join(output_folder, 'tiles_data.h')
+    result += f"const unsigned char tiles_count = {len(all_labels)};\n"
+    result += f"const unsigned char tiles_width = {TILE_WIDTH};\n"
+    result += f"const unsigned char tiles_height = {TILE_HEIGHT};\n"
+
+    output_filename = os.path.join(output_folder, 'tiles_data.c')
     with open(output_filename, 'w') as f:
         f.write(result)
 
@@ -746,32 +761,15 @@ def main():
             tileset.tiles[tile_id] = tile
         tile.compact_id = compact_tile_id
 
-    # Write the level data on disk
-    output_level_data(level_data, tileset, compact_level_id_info)
-
-    # Wrtie the tile properties on disk
-    output_tile_properties(tileset)
-
-    # Write the links data on disk
-    output_level_links(level_data)
-
-    # Write the spawners data on disk
-    output_spawners(level_data, tileset, compact_tile_ids)
-
-    # Write the doors data on disk
-    output_doors(level_data, tileset)
-
-    # Write the objects data on disk
-    output_objects(level_data, tileset)
-
-    # Write the levers data on disk
-    output_levers(level_data, tileset)
-
-    # Write inventory data on disk
-    output_inventory(tileset)
-
-    # Export level texts
-    output_texts(level_data)
+    output_level_data(level_data, tileset, compact_level_id_info)  # Write the level data on disk
+    output_tile_properties(tileset)  # Write the tile properties on disk
+    output_level_links(level_data)  # Write the links data on disk
+    output_spawners(level_data, tileset, compact_tile_ids)  # Write the spawners data on disk
+    output_doors(level_data, tileset)  # Write the doors data on disk
+    output_objects(level_data, tileset)  # Write the objects data on disk
+    output_levers(level_data, tileset)  # Write the levers data on disk
+    output_inventory(tileset)  # Write inventory data on disk
+    output_texts(level_data)  # Export level texts
 
 
 if __name__ == '__main__':

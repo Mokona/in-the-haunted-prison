@@ -30,6 +30,7 @@ add_executable(${EXE_NAME}
         src/agon/mos.asm
         src/agon/font.c
         src/agon/input.c
+        src/agon/tiles.c
 
         # The common part
         src/main.c
@@ -69,6 +70,7 @@ add_executable(${EXE_NAME}
         generated/spawner_data.c
         generated/texts_data.c
         generated/tile_properties.c
+        generated/tiles_data.c
 )
 
 target_link_options(${EXE_NAME} PRIVATE -pragma-define:CLIB_DEFAULT_SCREEN_MODE=8)

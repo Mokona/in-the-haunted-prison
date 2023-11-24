@@ -7,7 +7,6 @@
 #include "room.h"
 #include "text_zone.h"
 #include "tiles.h"
-#include "utils.h"
 
 unsigned char main_char_position = 0;
 unsigned char main_char_old_position = 0;
