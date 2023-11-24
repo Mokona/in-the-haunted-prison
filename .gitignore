@@ -10,4 +10,4 @@ cfg/
 temp/
 *.swp
 \.*#
-
+generated/
