@@ -1,8 +1,11 @@
+#if defined(__AGON__)
 #include "agon/vdp.h"
-#include <graphics.h>
-#include <stdio.h>
+#endif
 
+#if defined(__LYNX__)
 #include "clynx/check_96k.h"
+#endif
+
 #include "font.h"
 #include "loop_title.h"
 #include "memory.h"
