@@ -28,13 +28,13 @@ add_executable(${EXE_NAME}
         # The Agon part
         src/agon/vdp.c
         src/agon/mos.asm
+        src/agon/font.c
         src/agon/input.c
 
         # The common part
         src/main.c
         src/battle.c
         src/doors.c
-        src/font.c
         src/inventory.c
         src/levers.c
         src/links.c
