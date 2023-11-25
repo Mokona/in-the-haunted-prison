@@ -23,16 +23,7 @@ add_custom_command(
         DEPENDS ${CMAKE_SOURCE_DIR}/data/PublicPixel.ttf
 )
 
-
-add_executable(${EXE_NAME}
-        # The Agon part
-        src/agon/vdp.c
-        src/agon/mos.asm
-        src/agon/font.c
-        src/agon/input.c
-        src/agon/tiles.c
-
-        # The common part
+set(COMMON_FILES
         src/main.c
         src/battle.c
         src/doors.c
@@ -57,9 +48,9 @@ add_executable(${EXE_NAME}
         src/tiles.c
         src/tiles_code.asm
         src/utils.c
-        src/vector.c
+        src/vector.c)
 
-        # The generated files
+set(GENERATED_FILES
         generated/doors_data.c
         generated/font_data.c
         generated/inventory_data.c
@@ -73,4 +64,13 @@ add_executable(${EXE_NAME}
         generated/tiles_data.c
 )
 
+set(AGON_FILES
+        src/agon/vdp.c
+        src/agon/mos.asm
+        src/agon/font.c
+        src/agon/input.c
+        src/agon/tiles.c)
+
+
+add_executable(${EXE_NAME} ${AGON_FILES} ${COMMON_FILES} ${GENERATED_FILES})
 target_link_options(${EXE_NAME} PRIVATE -pragma-define:CLIB_DEFAULT_SCREEN_MODE=8)
