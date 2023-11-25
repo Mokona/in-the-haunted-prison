@@ -13,6 +13,7 @@ extern void clear_screen();
 extern uint previous_key;
 extern uint key;
 
+#if LANGUAGE == FR
 const char* title_text[] = {
         "Devant la porte de cette",
         "prison hant@e vous h@sitez",
@@ -24,18 +25,64 @@ const char* title_text[] = {
         "vous a parl@ ?",
         NULL};
 
+const char* title = "DANS LA PRISON HANTEE";
+const char* author = "Par S.Glaize";
+const char* graphics = "Tuiles par Kenney.nl";
+const char* space_to_enter = "ESPACE pour entrer...";
+
+#elif LANGUAGE == EN
+
+const char * title_text[] = {
+        "In front of the door of this",
+        "haunted prison you hesitate",
+        "for a moment.",
+        "",
+        "Will you have the courage to",
+        "look for the famous treasure",
+        "that this strange old man",
+        "told you about?",
+        NULL};
+
+const char* title = "IN THE HAUNTED PRISON";
+const char* author = "By S.Glaize";
+const char* graphics = "Tiles by Kenney.nl";
+const char* space_to_enter = "SPACE to enter...";
+
+#elif LANGUAGE == EO
+
+const char * title_text[] = {
+        "Antâu la pordo de tiu",
+        "spukita prizono vi",
+        "momenton hezitas.",
+        "",
+        "Ĉu vi havos la kuraĝon",
+        "serĉi la faman trezoron",
+        "kiun tiu stranga maljuna",
+        "viro parolis al vi?",
+        NULL
+};
+
+const char* title = "EN LA SPUKITA PRIZONO";
+const char* author = "De S.Glaize";
+const char* graphics = "Bildoj de Kenney.nl";
+const char* space_to_enter = "SPACO por eniri...";
+
+#elif
+#error "Language not defined"
+#endif
+
 void start_title_loop()
 {
     clear_screen();
 
     // Display the title screen
     goto_xy(5, 3);
-    print_str("DANS LA PRISON HANTEE");
+    print_str(title);
 
     goto_xy(9, 6);
-    print_str("Par S.Glaize");
+    print_str(author);
     goto_xy(2, 7);
-    print_str("Tuiles par Kenney.nl");
+    print_str(graphics);
 
     // Display the text
     for (int i = 0; title_text[i] != NULL; i++)
@@ -45,7 +92,7 @@ void start_title_loop()
     }
 
     goto_xy(10, 25);
-    print_str("ESPACE pour entrer...");
+    print_str(space_to_enter);
     previous_key = in_Inkey();
 }
 

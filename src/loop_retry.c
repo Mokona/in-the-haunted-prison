@@ -11,6 +11,7 @@ extern void clear_screen();
 extern uint previous_key;
 extern uint key;
 
+#if LANGUAGE == FR
 const char* retry_text[] = {
         "Vous avez fui la prison",
         "hant@e, mais vous n'avez",
@@ -28,6 +29,54 @@ const char* dead_text[] = {
         "Allez-vous r@essayer ?",
         NULL};
 
+const char* space_to_retry = "ESPACE pour r@essayer...";
+
+#elif LANGUAGE == EN
+
+const char * retry_text[] = {
+        "You fled the haunted",
+        "prison, but you didn't",
+        "find the treasure.",
+        "",
+        "Will you try again?",
+        NULL};
+
+const char * dead_text[] = {
+        "You are dead...",
+        "",
+        "But that's not going",
+        "to stop you!",
+        "",
+        "Will you try again?",
+        NULL};
+};
+
+const char* space_to_retry = "SPACE to retry...";
+
+#elif LANGUAGE == EO
+
+const char * retry_text[] = {
+        "Vi forkuris el la spukita",
+        "prizono, sed vi ne",
+        "trovis la trezoron.",
+        "",
+        "Ĉu vi provos denove?",
+        NULL};
+
+const char * dead_text[] = {
+        "Vi estas morta...",
+        "",
+        "Sed tio ne haltigos vin!",
+        "",
+        "Ĉu vi provos denove?",
+        NULL};
+};
+
+const char* space_to_retry = "SPACE por provi denove...";
+
+#endif
+
+
 void start_retry_loop(int reason)
 {
     exit_reason_t exit_reason = (exit_reason_t) reason;
@@ -43,7 +92,7 @@ void start_retry_loop(int reason)
     }
 
     goto_xy(7, 25);
-    print_str("ESPACE pour r@essayer...");
+    print_str(space_to_retry);
     previous_key = in_Inkey();
 }
 
