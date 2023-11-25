@@ -6,11 +6,6 @@ void initialize_tiles()
 {
 }
 
-const unsigned char* get_tile_graph(unsigned char tile_id)
-{
-    return all_tiles[tile_id];
-}
-
 extern void copy_16x16_to_vram(const unsigned char* sprite, unsigned short destination);
 
 void copy_tile_16_at(const unsigned char* sprite, char tile_x, char tile_y)
