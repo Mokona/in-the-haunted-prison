@@ -11,7 +11,6 @@
 
 typedef unsigned char mob_id_t;
 
-void initialize_mob_graphs();
 void initialize_mobs();
 void clear_game();
 void activate_mob_for_room(room_id_t room_id);

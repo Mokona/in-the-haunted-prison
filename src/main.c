@@ -9,7 +9,6 @@
 #include "font.h"
 #include "loop_title.h"
 #include "memory.h"
-#include "mobs.h"
 #include "room.h"
 #include "text_zone.h"
 #include "tiles.h"
@@ -32,7 +31,6 @@ int main()
     initialize_font();
     initialize_tiles();
     initialize_rooms();
-    initialize_mob_graphs();
     initialize_text_zone();
 
     start_title_loop();

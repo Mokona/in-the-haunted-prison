@@ -27,7 +27,6 @@ typedef struct {
     unsigned char damage;
     unsigned char defense;
     unsigned char move_type;// Because enum is on 2 bytes
-    //const unsigned char* graph_data;
 } Mob;
 
 Mob mob_templates[] = {
@@ -48,14 +47,6 @@ typedef struct {
     unsigned char force_display;// Used to avoid WALL blinking mainly
     character_stats_t battle_stats;
 } ActiveMob;
-
-void initialize_mob_graphs()
-{
-    for (size_t i = 0; i < sizeof(mob_templates) / sizeof(Mob); i++)
-    {
-        //mob_templates[i].graph_data = get_tile_graph(mob_templates[i].spawner_id);
-    }
-}
 
 // List of active mobs
 #define MAX_ACTIVE_MOBS 10
