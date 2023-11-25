@@ -10,7 +10,6 @@ compilers:
       include-dirs: "/snap/z88dk/current/share/z88dk/include/"
       defines-text: "
 #define Z80 1
-#define __AGON__ 1
 #define __z88dk_sdccdecl
 #define __z88dk_fastcall
 #define __sfr

@@ -46,7 +46,6 @@ set(COMMON_FILES
         src/teleport.c
         src/text_zone.c
         src/tiles.c
-        src/tiles_code.asm
         src/utils.c
         src/vector.c)
 
@@ -71,6 +70,10 @@ set(AGON_FILES
         src/agon/input.c
         src/agon/tiles.c)
 
+if(ZCCTARGET STREQUAL "agon")
+    set(SPECIFIC_FILES ${AGON_FILES})
+endif()
 
-add_executable(${EXE_NAME} ${AGON_FILES} ${COMMON_FILES} ${GENERATED_FILES})
+
+add_executable(${EXE_NAME} ${SPECIFIC_FILES} ${COMMON_FILES} ${GENERATED_FILES})
 target_link_options(${EXE_NAME} PRIVATE -pragma-define:CLIB_DEFAULT_SCREEN_MODE=8)
