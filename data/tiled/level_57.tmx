@@ -17,7 +17,7 @@
  </layer>
  <objectgroup id="4" name="Texte">
   <object id="6" x="40.741" y="47.8398" width="74.8539" height="22.1615">
-   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#ff0000" italic="1">Salle du tr@esor</text>
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#ff0000" italic="1">Salle du tr@sor</text>
   </object>
  </objectgroup>
  <objectgroup id="3" name="Liaisons">
