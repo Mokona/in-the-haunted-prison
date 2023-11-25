@@ -70,10 +70,22 @@ set(AGON_FILES
         src/agon/input.c
         src/agon/tiles.c)
 
+set(LYNX_FILES
+        src/clynx/check_96k.c
+        src/clynx/font.c
+        src/clynx/font_code.asm
+        src/clynx/screen.asm
+        src/clynx/tiles.c
+        src/clynx/tiles_code.asm)
+
 if(ZCCTARGET STREQUAL "agon")
     set(SPECIFIC_FILES ${AGON_FILES})
 endif()
 
+if(ZCCTARGET STREQUAL "lynx")
+    set(SPECIFIC_FILES ${LYNX_FILES})
+endif()
+
 
 add_executable(${EXE_NAME} ${SPECIFIC_FILES} ${COMMON_FILES} ${GENERATED_FILES})
-target_link_options(${EXE_NAME} PRIVATE -pragma-define:CLIB_DEFAULT_SCREEN_MODE=8)
+target_link_options(${EXE_NAME} PRIVATE -pragma-define:CLIB_DEFAULT_SCREEN_MODE=8 -create-app -subtarget=default)
