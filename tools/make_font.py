@@ -7,7 +7,7 @@ from utils import output_c_data
 BLACK = ImageColor.getrgb('black')
 WHITE = ImageColor.getrgb('white')
 
-CHAR_PALETTE = " !'-./0123456789:?éABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+CHAR_PALETTE = " !'-./0123456789:?éABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzĉĝŝĈ"
 CHAR_COUNT = len(CHAR_PALETTE)
 
 WIDTH_PER_CHAR = 8
