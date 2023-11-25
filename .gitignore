@@ -11,3 +11,4 @@ temp/
 *.swp
 \.*#
 generated/
+*.pyc
