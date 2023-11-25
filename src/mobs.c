@@ -27,16 +27,16 @@ typedef struct {
     unsigned char damage;
     unsigned char defense;
     unsigned char move_type;// Because enum is on 2 bytes
-    const unsigned char* graph_data;
+    //const unsigned char* graph_data;
 } Mob;
 
 Mob mob_templates[] = {
-        {E_SPAWN_BAT, 3, 1, 0, EMoveType_Random, NULL},
-        {E_SPAWN_RAT, 5, 2, 0, EMoveType_Escape, NULL},
-        {E_SPAWN_SKELETON, 6, 3, 3, EMoveType_Follow, NULL},
-        {E_SPAWN_ZOMBIE, 10, 5, 5, EMoveType_Slow_Follow, NULL},
-        {E_SPAWN_FANTOM, 20, 10, 30, EMoveType_Static, NULL},
-        {E_SPAWN_WALL, 30, 0, 15, EMoveType_Static, NULL},
+        {E_SPAWN_BAT, 3, 1, 0, EMoveType_Random},
+        {E_SPAWN_RAT, 5, 2, 0, EMoveType_Escape},
+        {E_SPAWN_SKELETON, 6, 3, 3, EMoveType_Follow},
+        {E_SPAWN_ZOMBIE, 10, 5, 5, EMoveType_Slow_Follow},
+        {E_SPAWN_FANTOM, 20, 10, 30, EMoveType_Static},
+        {E_SPAWN_WALL, 30, 0, 15, EMoveType_Static},
 };
 
 typedef struct {
@@ -53,7 +53,7 @@ void initialize_mob_graphs()
 {
     for (size_t i = 0; i < sizeof(mob_templates) / sizeof(Mob); i++)
     {
-        mob_templates[i].graph_data = get_tile_graph(mob_templates[i].spawner_id);
+        //mob_templates[i].graph_data = get_tile_graph(mob_templates[i].spawner_id);
     }
 }
 
@@ -196,7 +196,7 @@ bool must_be_displayed(const ActiveMob* mob)
 }
 
 void display_mobs(unsigned char room_id,
-                  const unsigned char* (*get_tile)(unsigned char) )
+                  unsigned char (*get_tile)(unsigned char))
 {
     char x;
     char y;
@@ -207,15 +207,15 @@ void display_mobs(unsigned char room_id,
 
         if (active_mob->room_id == room_id && must_be_displayed(active_mob))
         {
-            const unsigned char* previous_tile = get_tile(active_mob->old_position);
+            const unsigned char previous_tile = get_tile(active_mob->old_position);
 
             position_to_x_y(active_mob->old_position, &x, &y);
-            copy_tile_16_at(previous_tile, (char) (x * 2), (char) (y * 2));
+            display_tile(previous_tile, (char) (x * 2), (char) (y * 2));
 
             if (is_mob_alive(active_mob))
             {
                 position_to_x_y(active_mob->position, &x, &y);
-                copy_tile_16_at(active_mob->mob->graph_data, (char) (x * 2), (char) (y * 2));
+                display_tile(active_mob->mob->spawner_id, (char) (x * 2), (char) (y * 2));
                 active_mob->force_display = false;
             }
         }

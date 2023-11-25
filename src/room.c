@@ -108,8 +108,7 @@ void display_room()
         for (char x = 0; x < ROOM_WIDTH * 2; x += 2)
         {
             unsigned char tile = *tile_pointer;
-            const unsigned char* tile_graph = get_tile_graph(tile);
-            copy_tile_16_at(tile_graph, x, y);
+            display_tile(tile, x, y);
             tile_pointer++;
         }
     }
@@ -147,12 +146,10 @@ unsigned char get_room_tile_property_at(unsigned char position)
     return get_tile_property(tile_id);
 }
 
-const unsigned char* get_room_tile_at(unsigned char position)
+unsigned char get_room_tile_id_at(unsigned char position)
 {
     const unsigned char* tile_pointer = current_room.graph_data;
-    unsigned char tile_id = tile_pointer[position];
-
-    return get_tile_graph(tile_id);
+    return tile_pointer[position];
 }
 
 bool property_is_blocking(unsigned char property)

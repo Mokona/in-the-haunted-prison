@@ -43,7 +43,7 @@ void display_inventory()
             char x = INVENTORY_X + ((i % INVENTORY_WIDTH) * 2);
             char y = INVENTORY_Y + ((i / INVENTORY_WIDTH) * 2);
 
-            copy_tile_16_at(get_tile_graph(tile_id), x, y);
+            display_tile(tile_id, x, y);
         }
     }
 }

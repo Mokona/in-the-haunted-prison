@@ -105,18 +105,17 @@ void main_char_move(unsigned char key,
     }
 }
 
-void main_char_display(const unsigned char* (*get_tile)(unsigned char) )
+void main_char_display(unsigned char (*get_tile)(unsigned char) )
 {
-    const unsigned char* mc_stand = get_tile_graph(E_SPAWN_MC);
-    const unsigned char* previous_tile = get_tile(main_char_old_position);
+    const unsigned char previous_tile = get_tile(main_char_old_position);
 
     char x;
     char y;
     position_to_x_y(main_char_old_position, &x, &y);
-    copy_tile_16_at(previous_tile, x * 2, y * 2);
+    display_tile(previous_tile, x * 2, y * 2);
 
     position_to_x_y(main_char_position, &x, &y);
-    copy_tile_16_at(mc_stand, x * 2, y * 2);
+    display_tile(E_SPAWN_MC, x * 2, y * 2);
 }
 
 void main_char_cancel_last_move()

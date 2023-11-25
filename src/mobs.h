@@ -15,7 +15,7 @@ void initialize_mob_graphs();
 void initialize_mobs();
 void clear_game();
 void activate_mob_for_room(room_id_t room_id);
-void display_mobs(room_id_t room_id, const unsigned char* (*get_tile)(unsigned char) );
+void display_mobs(room_id_t room_id, unsigned char (*get_tile)(unsigned char));
 void mobs_move(room_id_t room_id,
                bool (*can_move_to)(unsigned char),
                unsigned char attractor_position);

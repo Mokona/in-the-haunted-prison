@@ -41,15 +41,14 @@ bool can_mob_move_to(unsigned char position)
     return !property_is_blocking(property) && !is_main_char_at(position) && mob_id == NO_MOB;
 }
 
-const unsigned char* get_tile(unsigned char position)
+unsigned char get_tile(unsigned char position)
 {
     object_id_t id = get_object_at(get_current_room_id(), position);
     if (id != NO_OBJECT)
     {
-        unsigned char tile_id = get_object_tile_id(id);
-        return get_tile_graph(tile_id);
+        return get_object_tile_id(id);
     }
-    return get_room_tile_at(position);
+    return get_room_tile_id_at(position);
 }
 
 void change_and_display_room(unsigned char room_id)

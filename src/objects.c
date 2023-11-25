@@ -36,7 +36,7 @@ void display_objects(room_id_t room_id)
             char x;
             char y;
             position_to_x_y(object->position, &x, &y);
-            copy_tile_16_at(get_tile_graph(object->tile_id), x * 2, y * 2);
+            display_tile(object->tile_id, x * 2, y * 2);
         }
     }
 }

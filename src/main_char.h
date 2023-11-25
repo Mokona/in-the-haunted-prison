@@ -11,7 +11,7 @@ void main_char_teleport(unsigned char position, bool forget_old_position);
 void main_char_move(unsigned char key,
                     bool (*can_move_to)(unsigned char),
                     void (*commit_move)(unsigned char));
-void main_char_display(const unsigned char* (*get_tile)(unsigned char) );
+void main_char_display(unsigned char (*get_tile)(unsigned char) );
 bool is_main_char_at(unsigned char position);
 void main_char_cancel_last_move();
 unsigned char get_main_char_position();
