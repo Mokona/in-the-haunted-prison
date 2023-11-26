@@ -11,7 +11,7 @@ extern void clear_screen();
 extern uint previous_key;
 extern uint key;
 
-#if LANGUAGE == FR
+#if LANGUAGE == 0
 const char* retry_text[] = {
         "Vous avez fui la prison",
         "hant@e, mais vous n'avez",
@@ -31,7 +31,7 @@ const char* dead_text[] = {
 
 const char* space_to_retry = "ESPACE pour r@essayer...";
 
-#elif LANGUAGE == EN
+#elif LANGUAGE == 1
 
 const char * retry_text[] = {
         "You fled the haunted",
@@ -53,7 +53,7 @@ const char * dead_text[] = {
 
 const char* space_to_retry = "SPACE to retry...";
 
-#elif LANGUAGE == EO
+#elif LANGUAGE == 2
 
 const char * retry_text[] = {
         "Vi forkuris el la spukita",

@@ -89,3 +89,4 @@ endif()
 
 add_executable(${EXE_NAME} ${SPECIFIC_FILES} ${COMMON_FILES} ${GENERATED_FILES})
 target_link_options(${EXE_NAME} PRIVATE -pragma-define:CLIB_DEFAULT_SCREEN_MODE=8 -create-app -subtarget=default)
+target_compile_definitions(${EXE_NAME} PRIVATE LANGUAGE=0)

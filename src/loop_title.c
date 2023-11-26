@@ -13,7 +13,7 @@ extern void clear_screen();
 extern uint previous_key;
 extern uint key;
 
-#if LANGUAGE == FR
+#if LANGUAGE == 0
 const char* title_text[] = {
         "Devant la porte de cette",
         "prison hant@e vous h@sitez",
@@ -30,7 +30,7 @@ const char* author = "Par S.Glaize";
 const char* graphics = "Tuiles par Kenney.nl";
 const char* space_to_enter = "ESPACE pour entrer...";
 
-#elif LANGUAGE == EN
+#elif LANGUAGE == 1
 
 const char * title_text[] = {
         "In front of the door of this",
@@ -48,12 +48,12 @@ const char* author = "By S.Glaize";
 const char* graphics = "Tiles by Kenney.nl";
 const char* space_to_enter = "SPACE to enter...";
 
-#elif LANGUAGE == EO
+#elif LANGUAGE == 2
 
 const char * title_text[] = {
-        "Antâu la pordo de tiu",
-        "spukita prizono vi",
-        "momenton hezitas.",
+        "Antaû la pordo de tiu",
+        "spukita prizono",
+        "vi momenton hezitas.",
         "",
         "Ĉu vi havos la kuraĝon",
         "serĉi la faman trezoron",
