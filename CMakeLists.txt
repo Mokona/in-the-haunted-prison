@@ -87,6 +87,14 @@ if(ZCCTARGET STREQUAL "lynx")
 endif()
 
 
-add_executable(${EXE_NAME} ${SPECIFIC_FILES} ${COMMON_FILES} ${GENERATED_FILES})
-target_link_options(${EXE_NAME} PRIVATE -pragma-define:CLIB_DEFAULT_SCREEN_MODE=8 -create-app -subtarget=default)
-target_compile_definitions(${EXE_NAME} PRIVATE LANGUAGE=0)
+add_executable(${EXE_NAME}_fr ${SPECIFIC_FILES} ${COMMON_FILES} ${GENERATED_FILES})
+target_link_options(${EXE_NAME}_fr PRIVATE -pragma-define:CLIB_DEFAULT_SCREEN_MODE=8 -create-app -subtarget=default)
+target_compile_definitions(${EXE_NAME}_fr PRIVATE LANGUAGE=0)
+
+add_executable(${EXE_NAME}_en ${SPECIFIC_FILES} ${COMMON_FILES} ${GENERATED_FILES})
+target_link_options(${EXE_NAME}_en PRIVATE -pragma-define:CLIB_DEFAULT_SCREEN_MODE=8 -create-app -subtarget=default)
+target_compile_definitions(${EXE_NAME}_en PRIVATE LANGUAGE=1)
+
+add_executable(${EXE_NAME}_eo ${SPECIFIC_FILES} ${COMMON_FILES} ${GENERATED_FILES})
+target_link_options(${EXE_NAME}_eo PRIVATE -pragma-define:CLIB_DEFAULT_SCREEN_MODE=8 -create-app -subtarget=default)
+target_compile_definitions(${EXE_NAME}_eo PRIVATE LANGUAGE=2)
