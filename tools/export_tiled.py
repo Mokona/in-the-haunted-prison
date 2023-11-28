@@ -642,7 +642,7 @@ def output_inventory(tileset):
         f.write(result_c)
 
 
-def output_texts(level_data):
+def output_texts(level_data, translations):
     # Gather the texts, remove the duplicates
     all_texts = {}
     for level in level_data.values():
@@ -669,10 +669,13 @@ def output_texts(level_data):
 
     result_c = '#include "texts_data.h"\n\n'
 
-    result_c += f"const char * const all_room_texts[] = {{\n"
-    for text_id, text in enumerate(all_texts):
-        result_c += f"      \"{text}\", // {text_id}\n"
-    result_c += "};\n\n"
+    for language_num in range(len(translations[0])):
+        result_c += f"#if LANGUAGE == {language_num}\n"
+        result_c += f"const char * const all_room_texts[] = {{\n"
+        for text_id, text in enumerate(translations):
+            result_c += f"      \"{text[language_num]}\", // {text_id}\n"
+        result_c += "};\n"
+        result_c += "#endif\n\n"
 
     result_c += f"const unsigned char level_to_text_count = {len(level_data)};\n\n"
 
@@ -762,6 +765,20 @@ def main():
             tileset.tiles[tile_id] = tile
         tile.compact_id = compact_tile_id
 
+    # Read an array of lines containing different values from the CVS formatted file read in data/texts.csv
+    # The first line contains the column names
+    # The other lines contain the values
+    # Use the csv module
+    import csv
+    translations = []
+    with open(os.path.join(data_folder, 'texts.csv'), newline='') as csvfile:
+        texts_reader = csv.reader(csvfile, delimiter=',', quotechar='"')
+        # Skip first line
+        next(texts_reader)
+        for row in texts_reader:
+            # Split the row as a tuple
+            translations.append(tuple(row))
+
     output_level_data(level_data, tileset, compact_level_id_info)  # Write the level data on disk
     output_tile_properties(tileset)  # Write the tile properties on disk
     output_level_links(level_data)  # Write the links data on disk
@@ -770,7 +787,7 @@ def main():
     output_objects(level_data, tileset)  # Write the objects data on disk
     output_levers(level_data, tileset)  # Write the levers data on disk
     output_inventory(tileset)  # Write inventory data on disk
-    output_texts(level_data)  # Export level texts
+    output_texts(level_data, translations)  # Export level texts
 
 
 if __name__ == '__main__':
