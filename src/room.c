@@ -121,7 +121,7 @@ void display_room()
     {
         size_t text_length = strlen(room_text);
         clear_line(20);
-        print_str(room_text);
+        print_encoded_str(room_text);
         clear_line(21);
 
         // TODO: could be merged with clear_line

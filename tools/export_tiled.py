@@ -642,6 +642,12 @@ def output_inventory(tileset):
         f.write(result_c)
 
 
+# Rewrite the encode_text function using a list comprehension
+def encode_text(text):
+    from make_font import CHAR_PALETTE
+    return [CHAR_PALETTE.index(char) if char in CHAR_PALETTE else 1 for char in text]
+
+
 def output_texts(level_data, translations):
     # Gather the texts, remove the duplicates
     all_texts = {}
@@ -673,7 +679,9 @@ def output_texts(level_data, translations):
         result_c += f"#if LANGUAGE == {language_num}\n"
         result_c += f"const char * const all_room_texts[] = {{\n"
         for text_id, text in enumerate(translations):
-            result_c += f"      \"{text[language_num]}\", // {text_id}\n"
+            encoded_text = encode_text(text[language_num])
+            encoded_text_as_escaped_chars = ''.join([f"\\x{char:02x}" for char in encoded_text])
+            result_c += f"      \"{encoded_text_as_escaped_chars}\", // {text_id}, {text[language_num]}\n"
         result_c += "};\n"
         result_c += "#endif\n\n"
 

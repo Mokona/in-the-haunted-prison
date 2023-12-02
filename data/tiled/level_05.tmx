@@ -17,7 +17,7 @@
  </layer>
  <objectgroup id="5" name="Texte">
   <object id="10" x="52.9215" y="111.872" width="74.8539" height="22.1615">
-   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#ff0000" italic="1">Entr@e de la prison</text>
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#ff0000" italic="1">Entrée de la prison</text>
   </object>
  </objectgroup>
  <layer id="3" name="Spawn" width="10" height="10">

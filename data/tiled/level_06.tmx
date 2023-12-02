@@ -31,7 +31,7 @@
  </layer>
  <objectgroup id="5" name="Texte">
   <object id="12" x="51.4296" y="76.1947" width="74.8539" height="22.1615">
-   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#ff0000" italic="1">Grotte cach@e</text>
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#ff0000" italic="1">Grotte cachée</text>
   </object>
  </objectgroup>
  <objectgroup id="4" name="Liaisons">

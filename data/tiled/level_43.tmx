@@ -31,7 +31,7 @@
  </layer>
  <objectgroup id="3" name="Texte">
   <object id="1" x="46.6331" y="26.2356" width="74.8539" height="22.1615">
-   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#ff0000" italic="1">R@fectoire et zombies</text>
+   <text fontfamily="Sans Serif" pixelsize="8" wrap="1" color="#ff0000" italic="1">Réfectoire et zombies</text>
   </object>
  </objectgroup>
 </map>

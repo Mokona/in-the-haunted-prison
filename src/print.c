@@ -1,34 +1,32 @@
 #include "print.h"
 
-#include "vector.h"
-
 char convert_char(char c)
 {
     if (c >= '?' && c <= 'Z')
     {
-        return c - '?' + 17;
+        return c - '?' + 18;
     }
     if (c >= 'a' && c <= 'z')
     {
-        return c - 'a' + 14 + 31;
+        return c - 'a' + 14 + 32;
     }
     if (c == ' ')
     {
-        return 0;
+        return 1;
     }
     if (c >= '-' && c <= ':')
     {
-        return c - '-' + 3;
+        return c - '-' + 4;
     }
     if (c == '\'')
     {
-        return 2;
+        return 3;
     }
     if (c == '!')
     {
-        return 1;
+        return 2;
     }
-    return 0;
+    return 1;
 }
 
 void print_str(const char* str)
@@ -36,6 +34,15 @@ void print_str(const char* str)
     while (*str != '\0')
     {
         put_char(convert_char(*str));
+        str++;
+    }
+}
+
+void print_encoded_str(const char* str)
+{
+    while (*str != '\0')
+    {
+        put_char(*str);
         str++;
     }
 }

@@ -7,6 +7,7 @@
     "expandedProjectPaths": [
         "."
     ],
+    "file.lastUsedOpenFilter": "Tous les Fichiers (*)",
     "fileStates": {
         "jeu-lynx.tsx": {
             "scaleInDock": 3.1088,
@@ -14,26 +15,26 @@
         },
         "level_05.tmx": {
             "expandedObjectLayers": [
-                4,
-                5
+                5,
+                4
             ],
-            "scale": 3.1624,
+            "scale": 2.4873,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 637.4905135340248,
-                "y": 77.47280546420441
+                "x": 629.7993808547421,
+                "y": -199.21199694447796
             }
         },
         "level_06.tmx": {
             "expandedObjectLayers": [
-                4,
-                5
+                5,
+                4
             ],
-            "scale": 2.314,
+            "scale": 2.4873,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 132.02247191011236,
-                "y": 26.14520311149525
+                "x": 338.7207011619025,
+                "y": -302.13484501266436
             }
         },
         "level_13.tmx": {
@@ -43,8 +44,8 @@
             "scale": 2.314,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 476.6637856525497,
-                "y": 396.71564390665515
+                "x": 80.16421780466723,
+                "y": 80.16421780466725
             }
         },
         "level_14.tmx": {
@@ -54,45 +55,45 @@
             "scale": 2.314,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": -27.87381158167676,
-                "y": 346.36992221261886
+                "x": 80.16421780466723,
+                "y": 80.16421780466725
             }
         },
         "level_15.tmx": {
             "expandedObjectLayers": [
-                3,
-                2
+                2,
+                3
             ],
             "scale": 2.5458,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 153.78270091916096,
-                "y": 91.32689135045959
+                "x": 80.32838400502789,
+                "y": 80.3283840050279
             }
         },
         "level_16.tmx": {
             "expandedObjectLayers": [
-                4,
+                5,
                 3,
-                5
+                4
             ],
             "scale": 2.5458,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 163.9956005970618,
-                "y": 176.95812711132058
+                "x": 80.32838400502789,
+                "y": 80.3283840050279
             }
         },
         "level_23.tmx": {
             "expandedObjectLayers": [
-                4,
-                5
+                5,
+                4
             ],
             "scale": 2.5458,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": -24.15743577657318,
-                "y": 158.10354309058056
+                "x": 80.32838400502789,
+                "y": 79.93558017126247
             }
         },
         "level_24.tmx": {
@@ -102,8 +103,8 @@
             "scale": 2.5458,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 220.55935265928196,
-                "y": -63.43781915311493
+                "x": 80.32838400502789,
+                "y": 80.3283840050279
             }
         },
         "level_25.tmx": {
@@ -113,45 +114,45 @@
             "scale": 2.5458,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 71.29389582842327,
-                "y": 27.692670280461925
+                "x": 80.32838400502789,
+                "y": 80.3283840050279
             }
         },
         "level_26.tmx": {
             "expandedObjectLayers": [
-                4,
+                2,
                 3,
-                2
+                4
             ],
             "scale": 2.5458,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 4.124440254536864,
-                "y": 47.72566580249824
+                "x": 80.32838400502789,
+                "y": 80.3283840050279
             }
         },
         "level_27.tmx": {
             "expandedObjectLayers": [
-                4,
+                5,
                 3,
-                5
+                4
             ],
             "scale": 2.5458,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 297.9417079110692,
-                "y": -172.2444811061356
+                "x": 80.32838400502789,
+                "y": 80.3283840050279
             }
         },
         "level_33.tmx": {
             "expandedObjectLayers": [
                 3
             ],
-            "scale": 2.5458,
+            "scale": 2.4873,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 237.05711367742953,
-                "y": 96.43334118941002
+                "x": 149.76078478671653,
+                "y": 120.41169139227276
             }
         },
         "level_34.tmx": {
@@ -161,8 +162,8 @@
             "scale": 2.5458,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 398.89229318878154,
-                "y": -31.2279047843507
+                "x": 80.32838400502789,
+                "y": 80.3283840050279
             }
         },
         "level_35.tmx": {
@@ -172,32 +173,32 @@
             "scale": 2.5458,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": -89.3628721816325,
-                "y": -161.6387775944693
+                "x": 80.32838400502789,
+                "y": 80.3283840050279
             }
         },
         "level_36.tmx": {
             "expandedObjectLayers": [
-                4,
+                5,
                 3,
-                5
+                4
             ],
             "scale": 2.5458,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 137.28493990101342,
-                "y": -12.766124597376063
+                "x": 80.32838400502789,
+                "y": 80.3283840050279
             }
         },
         "level_43.tmx": {
             "expandedObjectLayers": [
                 3
             ],
-            "scale": 2.5458,
+            "scale": 2.4873,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": -19.83659360515358,
-                "y": 211.91766831644276
+                "x": 267.1571583644917,
+                "y": 120.00964901700641
             }
         },
         "level_44.tmx": {
@@ -207,57 +208,57 @@
             "scale": 2.5458,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": -20.229397438919023,
-                "y": 39.86958912718987
+                "x": 80.32838400502789,
+                "y": 80.3283840050279
             }
         },
         "level_45.tmx": {
             "expandedObjectLayers": [
-                4,
+                5,
                 3,
-                5
+                4
             ],
             "scale": 2.5458,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 129.82166705947049,
-                "y": 99.57577185953332
+                "x": 80.32838400502789,
+                "y": 80.3283840050279
             }
         },
         "level_53.tmx": {
             "expandedObjectLayers": [
-                4,
-                3
+                3,
+                4
             ],
-            "scale": 2.5458,
+            "scale": 2.4873,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 137.67774373477886,
-                "y": 128.64325555817422
+                "x": 107.1442930084831,
+                "y": 119.60760664174005
             }
         },
         "level_54.tmx": {
             "expandedObjectLayers": [
-                4,
-                3
+                3,
+                4
             ],
-            "scale": 2.5458,
+            "scale": 2.4873,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 242.55636735014536,
-                "y": 49.29688113755991
+                "x": 323.84513327704747,
+                "y": 67.7441402323805
             }
         },
         "level_55.tmx": {
             "expandedObjectLayers": [
-                4,
-                3
+                3,
+                4
             ],
             "scale": 2.5458,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": -30.442297116819873,
-                "y": 193.45588812946815
+                "x": 80.32838400502789,
+                "y": 80.3283840050279
             }
         },
         "level_56.tmx": {
@@ -267,87 +268,88 @@
             "scale": 2.5458,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 63.43781915311493,
-                "y": 139.2489590698405
+                "x": 80.32838400502789,
+                "y": 80.3283840050279
             }
         },
         "level_57.tmx": {
             "expandedObjectLayers": [
                 4
             ],
-            "scale": 2.314,
-            "selectedLayer": 3,
+            "scale": 2.4873,
+            "selectedLayer": 1,
             "viewCenter": {
-                "x": -679.5592048401037,
-                "y": -196.84528954191876
+                "x": -665.9831946287139,
+                "y": -15.478631447754594
             }
         },
         "level_63.tmx": {
             "expandedObjectLayers": [
-                4,
-                3
+                3,
+                4
             ],
-            "scale": 2.5458,
-            "selectedLayer": 0,
+            "scale": 2.4873,
+            "selectedLayer": 1,
             "viewCenter": {
-                "x": 177.35093094508602,
-                "y": 127.46484405687801
+                "x": -52.86857234752543,
+                "y": 239.81827684637963
             }
         },
         "level_64.tmx": {
             "expandedObjectLayers": [
-                4,
+                5,
                 3,
-                5
+                4
             ],
-            "scale": 2.5458,
+            "scale": 2.4873,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 11.194909262314383,
-                "y": 177.74373477885143
+                "x": 163.8322679210389,
+                "y": 67.34209785711414
             }
         },
         "level_65.tmx": {
             "expandedObjectLayers": [
-                4,
-                3
+                3,
+                4
             ],
             "scale": 3.1624,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": -854.8886921325577,
-                "y": 236.68732608145714
+                "x": 80.16063749051354,
+                "y": 80.16063749051354
             }
         },
         "level_73.tmx": {
             "expandedObjectLayers": [
-                4,
-                3
+                3,
+                4
             ],
-            "scale": 2.314,
-            "selectedLayer": 0,
+            "scale": 2.4873,
+            "selectedLayer": 1,
             "viewCenter": {
-                "x": -921.9965427830597,
-                "y": 118.62575626620571
+                "x": -237.80806497004787,
+                "y": 624.5728299762795
             }
         },
         "level_74.tmx": {
             "expandedObjectLayers": [
-                4,
+                5,
                 3,
-                5
+                4
             ],
-            "scale": 2.5458,
+            "scale": 2.4873,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": -148.67625108021053,
-                "y": 178.13653861261687
+                "x": 3.819402565030373,
+                "y": -65.73392835604875
             }
         }
     },
     "last.imagePath": "/home/mokona/Developpement/Retro/CamputersLynx/jeu-lynx/data/tiled",
     "last.worldFilePath": "/home/mokona/Developpement/Retro/CamputersLynx/jeu-lynx/data/tiled",
     "loadedWorlds": [
+        "/home/mokona/Developpement/Agon/prison-hante-agon/data/tiled/jeu-lynx.world",
         "/home/mokona/Developpement/Retro/CamputersLynx/jeu-lynx/data/tiled/jeu-lynx.world"
     ],
     "map.height": 10,
