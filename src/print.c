@@ -59,7 +59,7 @@ void print_number(int number)
     int i = 0;
     while (number > 0)
     {
-        buffer[i] = (number % 10) + 6;
+        buffer[i] = (number % 10) + 7;
         number /= 10;
         i++;
     }
