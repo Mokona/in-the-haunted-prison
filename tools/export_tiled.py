@@ -675,23 +675,38 @@ def output_texts(level_data, translations):
 
     result_c = '#include "texts_data.h"\n\n'
 
+    # Delayed for later, but computes the order of the texts
+    ordered_translations = {}  # Dictionary are ordered by order of insertion
+    level_to_text_result_c = f"const level_text_t level_to_text[] = {{\n"
+    for text_id, (text, level_ids) in enumerate(all_texts.items()):
+        for level_id in level_ids:
+            level_to_text_result_c += f"    {{ {level_id:3}, {text_id} }},\n"
+
+            # Searches for the text in the translations and print an error if not found
+            for translation in translations:
+                if translation[0] == text:
+                    ordered_translations[text] = translation
+                    break
+            else:
+                print(f"Error: missing translation for text {all_texts[text_id][0]}")
+                ordered_translations[text] = ("?MISSING", "?MISSING", "?MISSING")
+
+    level_to_text_result_c += "\n};\n\n"
+
     for language_num in range(len(translations[0])):
         result_c += f"#if LANGUAGE == {language_num}\n"
         result_c += f"const char * const all_room_texts[] = {{\n"
-        for text_id, text in enumerate(translations):
-            encoded_text = encode_text(text[language_num])
+        for text_id, translation in enumerate(ordered_translations.values()):
+            text = translation[language_num]
+            encoded_text = encode_text(text)
             encoded_text_as_escaped_chars = ''.join([f"\\x{char:02x}" for char in encoded_text])
-            result_c += f"      \"{encoded_text_as_escaped_chars}\", // {text_id}, {text[language_num]}\n"
+            result_c += f"      \"{encoded_text_as_escaped_chars}\", // {text_id}, {text}\n"
         result_c += "};\n"
         result_c += "#endif\n\n"
 
     result_c += f"const unsigned char level_to_text_count = {len(level_data)};\n\n"
 
-    result_c += f"const level_text_t level_to_text[] = {{\n"
-    for text_id, (_, level_ids) in enumerate(all_texts.items()):
-        for level_id in level_ids:
-            result_c += f"    {{ {level_id:3}, {text_id} }},\n"
-    result_c += "\n};\n\n"
+    result_c += level_to_text_result_c
 
     output_filename = os.path.join(output_folder, 'texts_data.h')
     with open(output_filename, 'w') as f:
