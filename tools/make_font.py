@@ -8,7 +8,7 @@ BLACK = ImageColor.getrgb('black')
 WHITE = ImageColor.getrgb('white')
 
 # First char is an unprobable character to reserve the 0 index for the end of string
-CHAR_PALETTE = "¬ !'-./0123456789:?éABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzĉĝŝĈ"
+CHAR_PALETTE = "¬ !'-./0123456789:?éABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzĉĝŝĈŭ\\"
 CHAR_COUNT = len(CHAR_PALETTE)
 
 WIDTH_PER_CHAR = 8
