@@ -648,6 +648,9 @@ def encode_text(text):
     return [CHAR_PALETTE.index(char) if char in CHAR_PALETTE else 1 for char in text]
 
 
+REFERENCE_COLUMN_ID = 1
+
+
 def output_texts(level_data, translations):
     # Gather the texts, remove the duplicates
     all_texts = {}
@@ -684,7 +687,7 @@ def output_texts(level_data, translations):
 
             # Searches for the text in the translations and print an error if not found
             for translation in translations:
-                if translation[0] == text:
+                if translation[REFERENCE_COLUMN_ID] == text:
                     ordered_translations[text] = translation
                     break
             else:
@@ -693,11 +696,11 @@ def output_texts(level_data, translations):
 
     level_to_text_result_c += "\n};\n\n"
 
-    for language_num in range(len(translations[0])):
+    for language_num in range(len(translations[0]) - 1):  # One column is the ID, the others are the translations
         result_c += f"#if LANGUAGE == {language_num}\n"
         result_c += f"const char * const all_room_texts[] = {{\n"
         for text_id, translation in enumerate(ordered_translations.values()):
-            text = translation[language_num]
+            text = translation[language_num + 1]
             encoded_text = encode_text(text)
             encoded_text_as_escaped_chars = ''.join([f"\\x{char:02x}" for char in encoded_text])
             result_c += f"      \"{encoded_text_as_escaped_chars}\", // {text_id}, {text}\n"
