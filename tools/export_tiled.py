@@ -671,7 +671,7 @@ def output_texts(level_data, translations):
     result_h += f"    unsigned char text_id;\n"
     result_h += f"}} level_text_t;\n\n"
 
-    result_h += f"extern const char * const all_room_texts[];\n"
+    result_h += f"extern const char * const all_texts[];\n"
     result_h += f"extern const level_text_t level_to_text[];\n"
     result_h += f"extern const unsigned char level_to_text_count;\n"
     result_h += "#endif\n"
@@ -698,7 +698,7 @@ def output_texts(level_data, translations):
 
     for language_num in range(len(translations[0]) - 1):  # One column is the ID, the others are the translations
         result_c += f"#if LANGUAGE == {language_num}\n"
-        result_c += f"const char * const all_room_texts[] = {{\n"
+        result_c += f"const char * const all_texts[] = {{\n"
         for text_id, translation in enumerate(ordered_translations.values()):
             text = translation[language_num + 1]
             encoded_text = encode_text(text)

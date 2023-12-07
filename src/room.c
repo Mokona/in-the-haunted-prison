@@ -94,7 +94,7 @@ const char* get_text_for_room(room_id_t id)
         const level_text_t* level_text = &level_to_text[i];
         if (level_text->level_id == id)
         {
-            return all_room_texts[level_text->text_id];
+            return all_texts[level_text->text_id];
         }
     }
     return NULL;
