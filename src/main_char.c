@@ -131,7 +131,14 @@ unsigned char get_main_char_position()
 void main_char_display_stats()
 {
     goto_xy(21, 2);
+#if LANGUAGE == 0
     print_str("PV:      ");
+#elif LANGUAGE == 1
+    print_str("HP:      ");
+#elif LANGUAGE == 2
+    print_str("VP:    ");
+#endif
+
     goto_xy(25, 2);
     print_number(current_char_stats.hp);
     print_str("/");
