@@ -663,19 +663,6 @@ def output_texts(level_data, translations):
 
     print(f"Outputting {len(all_texts)} texts")
 
-    result_h = '#ifndef TEXTS_DATA_H\n#define TEXTS_DATA_H\n\n'
-    result_h += '#include <stddef.h>\n\n'
-
-    result_h += f"typedef struct {{\n"
-    result_h += f"    unsigned char level_id;\n"
-    result_h += f"    unsigned char text_id;\n"
-    result_h += f"}} level_text_t;\n\n"
-
-    result_h += f"extern const char * const all_texts[];\n"
-    result_h += f"extern const level_text_t level_to_text[];\n"
-    result_h += f"extern const unsigned char level_to_text_count;\n"
-    result_h += "#endif\n"
-
     result_c = '#include "texts_data.h"\n\n'
 
     # Delayed for later, but computes the order of the texts
@@ -699,11 +686,21 @@ def output_texts(level_data, translations):
     for language_num in range(len(translations[0]) - 1):  # One column is the ID, the others are the translations
         result_c += f"#if LANGUAGE == {language_num}\n"
         result_c += f"const char * const all_texts[] = {{\n"
+
+        # Add the texts for rooms
         for text_id, translation in enumerate(ordered_translations.values()):
             text = translation[language_num + 1]
             encoded_text = encode_text(text)
             encoded_text_as_escaped_chars = ''.join([f"\\x{char:02x}" for char in encoded_text])
             result_c += f"      \"{encoded_text_as_escaped_chars}\", // {text_id}, {text}\n"
+
+        # Add the texts with IDs
+        for text_id, translation in enumerate(translation for translation in translations if translation[0]):
+            text = translation[language_num + 1]
+            encoded_text = encode_text(text)
+            encoded_text_as_escaped_chars = ''.join([f"\\x{char:02x}" for char in encoded_text])
+            result_c += f"      \"{encoded_text_as_escaped_chars}\", // {text_id}, {text}\n"
+
         result_c += "};\n"
         result_c += "#endif\n\n"
 
@@ -711,13 +708,34 @@ def output_texts(level_data, translations):
 
     result_c += level_to_text_result_c
 
-    output_filename = os.path.join(output_folder, 'texts_data.h')
-    with open(output_filename, 'w') as f:
-        f.write(result_h)
-
     output_filename = os.path.join(output_folder, 'texts_data.c')
     with open(output_filename, 'w') as f:
         f.write(result_c)
+
+    # Header
+    result_h = '#ifndef TEXTS_DATA_H\n#define TEXTS_DATA_H\n\n'
+    result_h += '#include <stddef.h>\n\n'
+
+    result_h += f"typedef struct {{\n"
+    result_h += f"    unsigned char level_id;\n"
+    result_h += f"    unsigned char text_id;\n"
+    result_h += f"}} level_text_t;\n\n"
+
+    result_h += f"extern const char * const all_texts[];\n"
+    result_h += f"extern const level_text_t level_to_text[];\n"
+    result_h += f"extern const unsigned char level_to_text_count;\n\n"
+
+    # Add defines for the texts with IDs
+    first_id_for_texts = len(ordered_translations)
+    for text_id, translation in enumerate(translation for translation in translations if translation[0]):
+        result_h += f"#define TEXT_{translation[0]} {text_id + first_id_for_texts}\n"
+
+    result_h += "\n"
+    result_h += "#endif\n"
+
+    output_filename = os.path.join(output_folder, 'texts_data.h')
+    with open(output_filename, 'w') as f:
+        f.write(result_h)
 
 
 def output_tile_properties(tileset):
