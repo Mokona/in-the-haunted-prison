@@ -62,9 +62,3 @@ void display_tile(unsigned char tile_id, unsigned char x, unsigned char y)
     bitmap_select(FIRST_TILE_ID + tile_id);
     bitmap_draw(x * 8, y * 8);
 }
-
-void copy_tile_16_at(const unsigned char* sprite, char tile_x, char tile_y)
-{
-    bitmap_select(FIRST_TILE_ID + 2);
-    bitmap_draw(tile_x * 8, tile_y * 8);
-}
