@@ -57,6 +57,7 @@ void add_to_text_zone(const char* text_to_add) __z88dk_fastcall
     need_update_text_zone = true;
 }
 
+/*
 void add_num_to_text_zone(int number) __z88dk_fastcall
 {
     char buffer[10];
@@ -73,6 +74,7 @@ void add_num_to_text_zone(int number) __z88dk_fastcall
 
     add_to_text_zone(buffer_ptr + 1);
 }
+ */
 
 void update_text_zone()
 {
