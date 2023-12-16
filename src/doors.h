@@ -6,8 +6,7 @@
 
 void initialize_doors();
 bool is_door_locked(unsigned char position);
-void open_door_with_key(unsigned char id);
-void change_lever_door_status(unsigned char lever_id, bool open);
+void change_door_or_lever_status(unsigned char id, bool open, bool act_on_lever);
 void patch_level_with_doors(room_id_t id, unsigned char* data);
 
 

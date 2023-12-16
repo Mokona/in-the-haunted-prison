@@ -43,7 +43,7 @@ void initialize_levers()
         {
             const Lever* lever = get_lever_at(object->room_id, object->position);
             object->picked = (object->tile_id == lever_activated_tile_id);
-            change_lever_door_status(lever->lever_id, object->picked);
+            change_door_or_lever_status(lever->lever_id, object->picked, true);
         }
     }
 }
@@ -52,7 +52,7 @@ void act_on_lever(Object* object)
 {
     const Lever* lever = get_lever_at(object->room_id, object->position);
     const unsigned char lever_id = lever->lever_id;
-    change_lever_door_status(lever_id, true);
+    change_door_or_lever_status(lever_id, true, true);
     object->tile_id = lever_activated_tile_id;
 
     // All other levers in the same room are deactivated
@@ -65,7 +65,7 @@ void act_on_lever(Object* object)
         {
             object_id_t object_id = get_object_at(object->room_id, other_lever->position);
             drop_object(object_id);
-            change_lever_door_status(other_lever->lever_id, false);
+            change_door_or_lever_status(other_lever->lever_id, false, true);
             change_object_tile_id(object_id, lever_deactivated_tile_id);
         }
     }

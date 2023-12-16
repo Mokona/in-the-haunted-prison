@@ -44,7 +44,7 @@ bool is_door_locked(unsigned char position)
     return false;
 }
 
-void open_door_with_key(unsigned char id)
+void change_door_or_lever_status(unsigned char id, bool open, bool act_on_lever)
 {
     Door* all_doors = (Door*) doors;
 
@@ -53,21 +53,14 @@ void open_door_with_key(unsigned char id)
         Door* door = &all_doors[i];
         if (door->key_lever_id == id)
         {
-            door->locked = false;
-        }
-    }
-}
-
-void change_lever_door_status(unsigned char lever_id, bool open)
-{
-    Door* all_doors = (Door*) doors;
-
-    for (size_t i = 0; i < doors_count; i++)
-    {
-        Door* door = &all_doors[i];
-        if (door->type && door->key_lever_id == lever_id)
-        {
-            door->locked = !open;
+            if (act_on_lever && door->type)
+            {
+                door->locked = !open;
+            }
+            else if (!act_on_lever && !door->type)
+            {
+                door->locked = false;
+            }
         }
     }
 }

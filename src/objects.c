@@ -112,7 +112,7 @@ void act_on_object(object_id_t object_id)
 
         if (object->properties & E_KEY)
         {
-            open_door_with_key(object->tile_id);
+            change_door_or_lever_status(object->tile_id, true, false);
         }
         else if (object->properties & E_HP)
         {
