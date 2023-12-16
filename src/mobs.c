@@ -258,9 +258,7 @@ EMoveDirection opposite_direction(EMoveDirection move)
     }
 }
 
-void move_one_mob(ActiveMob* active_mob, size_t mob_id,
-                  bool (*can_move_to)(unsigned char),
-                  unsigned char attractor_position)
+void move_one_mob(ActiveMob* active_mob, bool (*can_move_to)(unsigned char), unsigned char attractor_position)
 {
     unsigned char new_position = active_mob->position;
     active_mob->old_position = active_mob->position;
@@ -313,7 +311,7 @@ void mobs_move(room_id_t room_id,
         if (active_mob->room_id == room_id)
         // We can move dead mobs, are they are static. It takes a bit less code space && is_mob_alive(active_mob))
         {
-            move_one_mob(active_mob, i,
+            move_one_mob(active_mob,
                          can_move_to,
                          attractor_position);
         }
