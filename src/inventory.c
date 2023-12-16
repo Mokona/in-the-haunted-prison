@@ -40,8 +40,8 @@ void display_inventory()
         if (tile_id != 0)
         {
             // Coordinates
-            char x = INVENTORY_X + ((i % INVENTORY_WIDTH) * 2);
-            char y = INVENTORY_Y + ((i / INVENTORY_WIDTH) * 2);
+            const char x = INVENTORY_X + ((i % INVENTORY_WIDTH) * 2);
+            const char y = INVENTORY_Y + ((i / INVENTORY_WIDTH) * 2);
 
             display_tile(tile_id, x, y);
         }
