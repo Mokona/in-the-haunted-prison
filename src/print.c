@@ -1,4 +1,5 @@
 #include "print.h"
+#include "../generated/font_data.h"
 
 char convert_char(char c)
 {
@@ -45,6 +46,29 @@ void print_encoded_str(const char* str)
         put_char(*str);
         str++;
     }
+}
+
+char print_encoded_str_at(char column, char line, const char* text)
+{
+    const char* text_pointer = text;
+    char x = column;
+    while (*text_pointer != '\0')
+    {
+        if (*text_pointer == glyph_count - 1)
+        {
+            line++;
+            x = column;
+        }
+        else
+        {
+            goto_xy(x, line);
+            put_char(*text_pointer);
+            x++;
+        }
+        text_pointer++;
+    }
+
+    return line;
 }
 
 void print_number(int number)

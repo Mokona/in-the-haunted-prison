@@ -1,6 +1,5 @@
 #include "loop_title.h"
 
-#include "../generated/font_data.h"
 #include "../generated/texts_data.h"
 #include "loop_main.h"
 #include "loop_retry.h"
@@ -19,21 +18,18 @@ extern uint key;
 const char* title = "DANS LA PRISON HANTEE";
 const char* author = "Par S.Glaize";
 const char* graphics = "Tuiles par Kenney.nl";
-const char* space_to_enter = "ESPACE pour entrer...";
 
 #elif LANGUAGE == 1
 
 const char* title = "IN THE HAUNTED PRISON";
 const char* author = "By S.Glaize";
 const char* graphics = "Tiles by Kenney.nl";
-const char* space_to_enter = "SPACE to enter...";
 
 #elif LANGUAGE == 2
 
 const char* title = "EN LA SPUKITA PRIZONO";
 const char* author = "De S.Glaize";
 const char* graphics = "Bildoj de Kenney.nl";
-const char* space_to_enter = "SPACO por eniri...";
 
 #elif
 #error "Language not defined"
@@ -52,28 +48,11 @@ void start_title_loop()
     goto_xy(2, 7);
     print_str(graphics);
 
-    const char * const text = all_texts[TEXT_ENTRY_TEXT];
-    const char * text_pointer = text;
-    char line = 11;
-    char x = 2;
-    while (*text_pointer != '\0')
-    {
-        if (*text_pointer == glyph_count -1)
-        {
-            line++;
-            x = 2;
-        }
-        else
-        {
-            goto_xy(x, line);
-            put_char(*text_pointer);
-            x++;
-        }
-        text_pointer++;
-    }
+    const char* const text = all_texts[TEXT_ENTRY_TEXT];
+    print_encoded_str_at(2, 11, text);
 
-    goto_xy(10, 25);
-    print_str(space_to_enter);
+    const char* const space_to_enter = all_texts[TEXT_SPACE_TO_ENTER];
+    print_encoded_str_at(10, 25, space_to_enter);
     previous_key = in_Inkey();
 }
 
