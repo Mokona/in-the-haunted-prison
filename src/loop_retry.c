@@ -5,7 +5,6 @@
 #include "print.h"
 
 #include <input.h>
-#include <sys/types.h>
 
 extern void clear_screen();
 

@@ -1,12 +1,10 @@
 #include "loop_victory.h"
 
-#include "../generated/font_data.h"
 #include "../generated/texts_data.h"
 #include "inventory.h"
 #include "print.h"
 
 #include <input.h>
-#include <sys/types.h>
 
 extern void clear_screen();
 
