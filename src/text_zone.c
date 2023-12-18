@@ -1,4 +1,5 @@
 #include "text_zone.h"
+#include "../generated/font_data.h"
 #include "print.h"
 
 #include <malloc.h>
@@ -7,7 +8,7 @@
 
 #define TEXT_ZONE_LENGTH 200
 char* text_zone_buffer;
-char* end_of_zone; // Points on the first free byte of the buffer
+char* end_of_zone;// Points on the first free byte of the buffer
 
 #define FIRST_ZONE_LINE 22
 #define LAST_ZONE_LINE 28
@@ -52,29 +53,17 @@ void add_to_text_zone(const char* text_to_add) __z88dk_fastcall
     }
 
     strcpy(end_of_zone, text_to_add);
+    for (char* current = end_of_zone; current < end_of_zone + size_of_new_text; ++current)
+    {
+        if (*current == glyph_count - 1)
+        {
+            *current = 0;
+        }
+    }
     end_of_zone += size_of_new_text;
 
     need_update_text_zone = true;
 }
-
-/*
-void add_num_to_text_zone(int number) __z88dk_fastcall
-{
-    char buffer[10];
-    char* buffer_ptr = buffer + 9;
-    *buffer_ptr = 0;
-    --buffer_ptr;
-
-    do
-    {
-        *buffer_ptr = (number % 10) + '0';
-        --buffer_ptr;
-        number /= 10;
-    } while (number > 0);
-
-    add_to_text_zone(buffer_ptr + 1);
-}
- */
 
 void update_text_zone()
 {
@@ -100,7 +89,7 @@ void update_text_zone()
         }
 
         clear_line(line);
-        print_str(current);
+        print_encoded_str(current);
 
         current -= 2;
         --line;
@@ -111,5 +100,4 @@ void update_text_zone()
         clear_line(line);
         --line;
     }
-
 }

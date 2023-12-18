@@ -41,15 +41,15 @@ void main_char_change_weapon(int weapon_id)
     if (weapon_id == 1)
     {
         current_char_stats.battle_stats = stats_weapon_1;
-        add_to_text_zone("Vous prenez l'ep@e");
+
+        const char * const sword = all_texts[TEXT_SWORD];
+        add_to_text_zone(sword);
     }
     else if (weapon_id == 2)
     {
         current_char_stats.battle_stats = stats_weapon_2;
-        add_to_text_zone("");
-        add_to_text_zone("Vous prenez le marteau");
-        add_to_text_zone("Il semble pouvoir casser");
-        add_to_text_zone("des murs !");
+        const char * const hammer = all_texts[TEXT_HAMMER];
+        add_to_text_zone(hammer);
     }
     else
     {
@@ -154,7 +154,8 @@ void main_char_apply_damage(unsigned char hp_change)
         return;
     }
 
-    add_to_text_zone("Vous etes touch@");
+    const char * const hit = all_texts[TEXT_MC_HIT];
+    add_to_text_zone(hit);
     if (hp_change >= current_char_stats.hp)
     {
         current_char_stats.hp = 0;

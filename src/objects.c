@@ -2,6 +2,7 @@
 
 #include "../generated/objects_data.h"
 #include "../generated/spawner_data.h"
+#include "../generated/texts_data.h"
 #include "doors.h"
 #include "inventory.h"
 #include "levers.h"
@@ -86,18 +87,14 @@ bool act_on_cauldron()
     if (has_all_items)
     {
         clear_game();
-        add_to_text_zone("");
-        add_to_text_zone("Le sort fait effet");
-        add_to_text_zone("et dans un grand souffle,");
-        add_to_text_zone("les monstres disparaissent.");
+        const char * const spell = all_texts[TEXT_FORMULA_OK];
+        add_to_text_zone(spell);
         return true;
     }
     else
     {
-        add_to_text_zone("");
-        add_to_text_zone("Rien ne se passe.");
-        add_to_text_zone("Il manque probablement");
-        add_to_text_zone("des ingr@dients.");
+        const char * const spell = all_texts[TEXT_FORMULA_FAIL];
+        add_to_text_zone(spell);
         return false;
     }
 }

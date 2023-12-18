@@ -1,6 +1,7 @@
 #include "mobs.h"
 
 #include "../generated/spawner_data.h"
+#include "../generated/texts_data.h"
 #include "inventory.h"
 #include "room.h"
 #include "spawners.h"
@@ -378,11 +379,13 @@ void mob_apply_damage(mob_id_t id, unsigned char hp_change)
     bool is_wall = active_mob->mob->spawner_id == E_SPAWN_WALL;
     if (!is_wall)
     {
-        add_to_text_zone("Adversaire touch@");
+        const char * const hit = all_texts[TEXT_MONSTER_HIT];
+        add_to_text_zone(hit);
     }
     else
     {
-        add_to_text_zone("Le mur se fissure...");
+        const char * const wall = all_texts[TEXT_WALL];
+        add_to_text_zone(wall);
     }
 
     if (hp_change >= active_mob->battle_stats.hp)
@@ -392,7 +395,8 @@ void mob_apply_damage(mob_id_t id, unsigned char hp_change)
         unsigned char spawner_id = active_mob->mob->spawner_id;
         if (!is_in_inventory(spawner_id) && !is_wall)
         {
-            add_to_text_zone("Troph@ ajout@.");
+            const char * const trophy = all_texts[TEXT_TROPHY];
+            add_to_text_zone(trophy);
             add_to_inventory(spawner_id);
         }
     }
