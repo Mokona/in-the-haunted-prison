@@ -10,6 +10,7 @@ add_custom_command(
         generated/links_data.c generated/objects_data.c generated/spawner_data.c generated/texts_data.c
         generated/tile_properties.c
         COMMAND python3 ${CMAKE_SOURCE_DIR}/tools/export_tiled.py ${CMAKE_BINARY_DIR}
+        COMMAND python3 ${CMAKE_SOURCE_DIR}/tools/export_tiled.py ${PROJECT_SOURCE_DIR}
         DEPENDS ${CMAKE_SOURCE_DIR}/tools/export_tiled.py
         DEPENDS ${CMAKE_SOURCE_DIR}/data/tiled/jeu-lynx.tsx
         DEPENDS ${CMAKE_SOURCE_DIR}/data/tiled/jeu-lynx.world
@@ -19,6 +20,7 @@ add_custom_command(
 add_custom_command(
         OUTPUT generated/font_data.c generated/font_data.h
         COMMAND python3 ${CMAKE_SOURCE_DIR}/tools/make_font.py ${CMAKE_BINARY_DIR}
+        COMMAND python3 ${CMAKE_SOURCE_DIR}/tools/make_font.py ${PROJECT_SOURCE_DIR}
         DEPENDS ${CMAKE_SOURCE_DIR}/tools/make_font.py
         DEPENDS ${CMAKE_SOURCE_DIR}/data/PublicPixel.ttf
 )
@@ -85,7 +87,6 @@ endif()
 if(ZCCTARGET STREQUAL "lynx")
     set(SPECIFIC_FILES ${LYNX_FILES})
 endif()
-
 
 add_executable(${EXE_NAME}_fr ${SPECIFIC_FILES} ${COMMON_FILES} ${GENERATED_FILES})
 target_link_options(${EXE_NAME}_fr PRIVATE -pragma-define:CLIB_DEFAULT_SCREEN_MODE=8 -create-app -subtarget=default)
