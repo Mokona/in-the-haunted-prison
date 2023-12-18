@@ -51,19 +51,17 @@ void print_encoded_str(const char* str)
 char print_encoded_str_at(char column, char line, const char* text)
 {
     const char* text_pointer = text;
-    char x = column;
+    goto_xy(column, line);
     while (*text_pointer != '\0')
     {
         if (*text_pointer == glyph_count - 1)
         {
             line++;
-            x = column;
+            goto_xy(column, line);
         }
         else
         {
-            goto_xy(x, line);
             put_char(*text_pointer);
-            x++;
         }
         text_pointer++;
     }
