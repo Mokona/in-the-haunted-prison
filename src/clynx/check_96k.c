@@ -1,4 +1,5 @@
 #include "check_96k.h"
+#include "../../generated/texts_data.h"
 #include "../print.h"
 
 extern void clear_screen();
@@ -15,8 +16,8 @@ void check_96k()
             // 48k Lynx
             // Clear screen and display error message then infinite loop
             clear_screen();
-            goto_xy(1, 1);
-            print_str("MUST RUN ON A 96K LYNX");
+            const char* const error_message = all_texts[TEXT_LYNX_96K];
+            print_encoded_str_at(1, 1, error_message);
 
             while (1)
             {
