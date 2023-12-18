@@ -1,6 +1,7 @@
 #include "main_char.h"
 
 #include "../generated/spawner_data.h"
+#include "../generated/texts_data.h"
 #include "characters.h"
 #include "keys.h"
 #include "print.h"
@@ -130,20 +131,15 @@ unsigned char get_main_char_position()
 
 void main_char_display_stats()
 {
-    goto_xy(21, 2);
-#if LANGUAGE == 0
-    print_str("PV:      ");
-#elif LANGUAGE == 1
-    print_str("HP:      ");
-#elif LANGUAGE == 2
-    print_str("VP:    ");
-#endif
+    const char * const hit_points = all_texts[TEXT_HP];
+    print_encoded_str_at(21, 2, hit_points);
 
     goto_xy(25, 2);
     print_number(current_char_stats.hp);
-    print_str("/");
+
+    const char * const separator = all_texts[TEXT_SEPARATOR];
+    print_encoded_str_at(27, 3, separator);
     print_number(current_char_stats.max_hp);
-    print_str(" ");
 }
 
 const battle_stats_t* get_main_char_stats()
