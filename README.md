@@ -17,7 +17,7 @@ pièces, avec des portes, des monstres et des trésors.
 
 # Description (EO)
 
-"En la spukita prizono" estas ludo por Camputers Lynx 96k,
+"En la hantata prizono" estas ludo por Camputers Lynx 96k,
 8-bita maŝino temo de la game jam "Retro Programmers United For Obscure Systems".
 
 Ĝi estas grafika aventurludo en kiu oni aventuras en ĉambroj,
@@ -53,4 +53,21 @@ The generated files are built into the cmake build folder, but they are expected
 the sources to be in the project folder. So you need to call the tools by hand
 to generate them in the project folder.
 
+As CMake expects the files to be present, you need to create them before with a manual call from
+the project folder:
+
+```bash
+python3 tools/make_font.py
+python3 tools/export_tiled.py
+```
+
 Not practical and error-prone. Waiting for a better solution.
+
+### Unused data
+
+You can spot also that there is a tool to generate a picture for the title screen.
+I didn't use it, but it is there.
+
+There are also sprites for the main characters in the different directions, but
+I decided to use only one sprite for the main character, as it was more coherent
+with the other characters. Anyway, the sprites are still there.
