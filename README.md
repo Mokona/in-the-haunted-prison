@@ -6,6 +6,8 @@ developed for Camputers Lynx 96k, a 8 bit machine subject of the game jam
 
 It is a graphic adventure game in which you venture into rooms, with doors, monsters and treasures.
 
+The game release is [hosted on itch.io](https://mokona78.itch.io/dans-la-prison-hante)
+
 # Description (FR)
 
 « Dans la prison hantée » est un jeu pour Camputers Lynx 96k,
@@ -15,6 +17,8 @@ Retro Programmers United For Obscure        …Systems.
 C'est un jeu d'aventure graphique dans lequel on s'aventure dans des
 pièces, avec des portes, des monstres et des trésors.
 
+Le jeu est [hébergé sur itch.io](https://mokona78.itch.io/dans-la-prison-hante)
+
 # Description (EO)
 
 "En la hantata prizono" estas ludo por Camputers Lynx 96k,
@@ -22,6 +26,8 @@ pièces, avec des portes, des monstres et des trésors.
 
 Ĝi estas grafika aventurludo en kiu oni aventuras en ĉambroj,
 kun pordoj, monstroj kaj trezoroj.
+
+La ludo estas [gastigita ĉe itch.io](https://mokona78.itch.io/dans-la-prison-hante)
 
 ## Build
 
