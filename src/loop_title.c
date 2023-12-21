@@ -27,7 +27,7 @@ const char* graphics = "Tiles by Kenney.nl";
 
 #elif LANGUAGE == 2
 
-const char* title = "EN LA SPUKITA PRIZONO";
+const char* title = "EN LA HANTITA PRIZONO";
 const char* author = "De S.Glaize";
 const char* graphics = "Bildoj de Kenney.nl";
 
