@@ -138,7 +138,7 @@ void main_char_display_stats()
     print_number(current_char_stats.hp);
 
     const char * const separator = all_texts[TEXT_SEPARATOR];
-    print_encoded_str_at(27, 3, separator);
+    print_encoded_str_at(27, 2, separator);
     print_number(current_char_stats.max_hp);
 }
 
